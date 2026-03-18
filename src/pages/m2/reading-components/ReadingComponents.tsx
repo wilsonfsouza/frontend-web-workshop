@@ -8,7 +8,7 @@ export function ReadingComponents() {
   return (
     <div className="max-w-3xl space-y-8">
       <div>
-        <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100">
+        <h2 className="text-2xl font-bold text-gray-900">
           Reading a React Component
         </h2>
         <p className="text-gray-500 mt-1">
@@ -53,7 +53,7 @@ function TaskList() {
   );
 }`}</CodeBlock.Content>
         </CodeBlock.Root>
-        <div className="mt-3 p-3 bg-indigo-50 dark:bg-indigo-950 rounded text-sm text-indigo-700 dark:text-indigo-300">
+        <div className="mt-3 p-3 bg-indigo-50 rounded text-sm text-indigo-700">
           Reading tip: start with the imports and the interface. They tell you what the component
           depends on and what data it works with — before you read a single line of logic.
         </div>
@@ -81,7 +81,7 @@ function TaskList() {
   </div>
 );`}</CodeBlock.Content>
         </CodeBlock.Root>
-        <div className="mt-3 p-3 bg-indigo-50 dark:bg-indigo-950 rounded text-sm text-indigo-700 dark:text-indigo-300">
+        <div className="mt-3 p-3 bg-indigo-50 rounded text-sm text-indigo-700">
           Reading tip: the JSX is a tree. Indent levels show nesting. Look for{" "}
           <InlineCode variant="accent">.map()</InlineCode> (lists),{" "}
           <InlineCode variant="accent">{"? :"}</InlineCode> (conditionals), and{" "}
@@ -102,15 +102,15 @@ const [confirmDelete, setConfirmDelete] = useState<string | null>(null);`}</Code
         </CodeBlock.Root>
         <div className="mt-3 space-y-2">
           <div className="flex items-start gap-3 text-sm">
-            <span className="inline-block w-3 h-3 mt-1 bg-indigo-200 dark:bg-indigo-800 rounded shrink-0" />
-            <span className="text-gray-600 dark:text-gray-400">
+            <span className="inline-block w-3 h-3 mt-1 bg-indigo-200 rounded shrink-0" />
+            <span className="text-gray-600">
               <InlineCode>tasks</InlineCode> — the array of task objects. When it changes, the list
               re-renders.
             </span>
           </div>
           <div className="flex items-start gap-3 text-sm">
-            <span className="inline-block w-3 h-3 mt-1 bg-amber-200 dark:bg-amber-800 rounded shrink-0" />
-            <span className="text-gray-600 dark:text-gray-400">
+            <span className="inline-block w-3 h-3 mt-1 bg-amber-200 rounded shrink-0" />
+            <span className="text-gray-600">
               <InlineCode>confirmDelete</InlineCode> — tracks which task (if any) is showing the
               delete confirmation. It&apos;s a task ID or null.
             </span>
@@ -169,7 +169,7 @@ const handleDelete = (taskId: string) => {
 };`}</CodeBlock.Content>
             </CodeBlock.Root>
           </div>
-          <div className="p-3 bg-indigo-50 dark:bg-indigo-950 rounded text-sm text-indigo-700 dark:text-indigo-300">
+          <div className="p-3 bg-indigo-50 rounded text-sm text-indigo-700">
             The pattern is always the same: user action → event handler → setState → React
             re-renders with new data → UI updates. Every interactive React component follows this
             cycle.

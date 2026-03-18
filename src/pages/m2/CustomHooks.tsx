@@ -48,13 +48,13 @@ export function CustomHooks() {
   return (
     <div className="max-w-3xl space-y-8">
       <div>
-        <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100">Custom Hooks</h2>
+        <h2 className="text-2xl font-bold text-gray-900">Custom Hooks</h2>
         <p className="text-gray-500 mt-1">
           Extract reusable logic into functions that start with "use".
         </p>
       </div>
 
-      <div className="p-4 bg-emerald-50 dark:bg-emerald-950 border border-emerald-200 dark:border-emerald-800 rounded-lg text-sm text-emerald-800 dark:text-emerald-200 space-y-2">
+      <div className="p-4 bg-emerald-50 border border-emerald-200 rounded-lg text-sm text-emerald-800 space-y-2">
         <p>
           A custom hook is just a function that uses other hooks. Create one when you notice
           repeated logic across components, your component is getting long, or you want to test the
@@ -68,7 +68,7 @@ export function CustomHooks() {
       >
         <div className="space-y-4">
           <div className="flex items-center gap-3">
-            <span className="text-sm text-gray-600 dark:text-gray-400">Theme:</span>
+            <span className="text-sm text-gray-600">Theme:</span>
             <button
               onClick={() => setTheme(theme === "light" ? "dark" : "light")}
               className="px-3 py-1.5 text-sm bg-indigo-600 text-white rounded hover:bg-indigo-700 transition-colors"
@@ -78,7 +78,7 @@ export function CustomHooks() {
             <span className="text-sm font-mono text-emerald-600">current: "{theme}"</span>
           </div>
           <div>
-            <label htmlFor="notes" className="block text-sm text-gray-600 dark:text-gray-400 mb-1">
+            <label htmlFor="notes" className="block text-sm text-gray-600 mb-1">
               Notes (persisted):
             </label>
             <textarea
@@ -86,7 +86,7 @@ export function CustomHooks() {
               value={notes}
               onChange={(e) => setNotes(e.target.value)}
               placeholder="Type something, refresh the page, it's still here..."
-              className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded bg-white dark:bg-gray-900 text-sm h-20"
+              className="w-full px-3 py-2 border border-gray-300 rounded bg-white text-sm h-20"
             />
           </div>
         </div>
@@ -106,9 +106,9 @@ export function CustomHooks() {
             value={search}
             onChange={(e) => setSearch(e.target.value)}
             placeholder="Type quickly, watch the debounced value lag behind..."
-            className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded bg-white dark:bg-gray-900 text-sm"
+            className="w-full px-3 py-2 border border-gray-300 rounded bg-white text-sm"
           />
-          <div className="p-3 bg-gray-50 dark:bg-gray-900 rounded font-mono text-sm space-y-1">
+          <div className="p-3 bg-gray-50 rounded font-mono text-sm space-y-1">
             <p>
               Raw value: "<span className="text-amber-600">{search}</span>"
             </p>
@@ -127,7 +127,7 @@ export function CustomHooks() {
         title="When to create a custom hook"
         description="The checklist from the workshop."
       >
-        <ul className="text-sm text-gray-600 dark:text-gray-400 space-y-1.5">
+        <ul className="text-sm text-gray-600 space-y-1.5">
           <li>✅ Logic is used in more than one component</li>
           <li>✅ It makes the component easier to read</li>
           <li>✅ It involves hooks (useState, useEffect, etc.)</li>

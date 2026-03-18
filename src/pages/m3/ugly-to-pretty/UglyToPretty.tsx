@@ -12,7 +12,7 @@ export function UglyToPretty() {
   return (
     <div className="max-w-3xl space-y-8">
       <div>
-        <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100">From Ugly to Pretty</h2>
+        <h2 className="text-2xl font-bold text-gray-900">From Ugly to Pretty</h2>
         <p className="text-gray-500 mt-1">
           Watch a profile card transform step by step. Each step adds one Tailwind concept.
         </p>
@@ -20,14 +20,14 @@ export function UglyToPretty() {
 
       <div className="space-y-3">
         <div className="flex items-center justify-between">
-          <span className="text-sm font-medium text-gray-900 dark:text-gray-100">{step.label}</span>
+          <span className="text-sm font-medium text-gray-900">{step.label}</span>
           <span className="text-xs text-gray-500">
             {currentStep + 1} / {steps.length}
           </span>
         </div>
 
         {/* Progress bar */}
-        <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-1.5">
+        <div className="w-full bg-gray-200 rounded-full h-1.5">
           <div
             className="bg-indigo-600 h-1.5 rounded-full transition-all duration-300"
             style={{ width: `${((currentStep + 1) / steps.length) * 100}%` }}
@@ -43,7 +43,7 @@ export function UglyToPretty() {
               className={`px-3 py-1.5 rounded text-xs font-medium transition-colors ${
                 currentStep === step.id
                   ? "bg-indigo-600 text-white"
-                  : "bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-700"
+                  : "bg-gray-100 text-gray-600 hover:bg-gray-200:bg-gray-700"
               }`}
             >
               {step.id}
@@ -56,7 +56,7 @@ export function UglyToPretty() {
         <button
           onClick={() => setCurrentStep((currentStep) => Math.max(0, currentStep - 1))}
           disabled={currentStep === 0}
-          className="px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 text-sm font-medium hover:bg-gray-50 dark:hover:bg-gray-800 disabled:opacity-40 disabled:cursor-not-allowed transition-colors"
+          className="px-4 py-2 rounded-lg border border-gray-300 text-gray-700 text-sm font-medium hover:bg-gray-50:bg-gray-800 disabled:opacity-40 disabled:cursor-not-allowed transition-colors"
         >
           ← Previous
         </button>
@@ -77,7 +77,7 @@ export function UglyToPretty() {
             {step.concepts.map((concept) => (
               <code
                 key={concept}
-                className="px-2 py-0.5 rounded text-xs font-mono bg-indigo-100 text-indigo-800 dark:bg-indigo-900 dark:text-indigo-200"
+                className="px-2 py-0.5 rounded text-xs font-mono bg-indigo-100 text-indigo-800"
               >
                 {concept}
               </code>
@@ -85,7 +85,7 @@ export function UglyToPretty() {
           </div>
         )}
 
-        <div className="p-4 bg-gray-100 dark:bg-gray-800 rounded-lg">
+        <div className="p-4 bg-gray-100 rounded-lg">
           <ProfileCard step={step} />
         </div>
       </ExampleCard>

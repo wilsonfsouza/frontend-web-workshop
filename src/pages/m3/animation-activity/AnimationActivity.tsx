@@ -18,7 +18,7 @@ export function AnimationActivity() {
   return (
     <div className="max-w-3xl space-y-8">
       <div>
-        <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100">
+        <h2 className="text-2xl font-bold text-gray-900">
           Activity: Animate It
         </h2>
         <p className="text-gray-500 mt-1">
@@ -26,7 +26,7 @@ export function AnimationActivity() {
         </p>
       </div>
 
-      <div className="p-4 bg-indigo-50 dark:bg-indigo-950 border border-indigo-200 dark:border-indigo-800 rounded-lg text-sm text-indigo-800 dark:text-indigo-200 space-y-2">
+      <div className="p-4 bg-indigo-50 border border-indigo-200 rounded-lg text-sm text-indigo-800 space-y-2">
         <p className="font-medium">🎬 Solo Exercise (10 min)</p>
         <p>
           Build a success toast notification that slides up when it appears. You&apos;ll write the
@@ -51,8 +51,8 @@ export function AnimationActivity() {
         </div>
       </ExampleCard>
 
-      <div className="p-4 bg-amber-50 dark:bg-amber-950 border border-amber-200 dark:border-amber-800 rounded-lg">
-        <p className="text-sm text-amber-800 dark:text-amber-200">
+      <div className="p-4 bg-amber-50 border border-amber-200 rounded-lg">
+        <p className="text-sm text-amber-800">
           Open{" "}
           <InlineCode variant="warning">
             src/pages/m3/animation-activity/AnimationCard.tsx
@@ -67,7 +67,7 @@ export function AnimationActivity() {
 
       <ExampleCard title="Step-by-Step Hints" description="Work through these one at a time.">
         <div className="space-y-2">
-          <details className="text-sm text-gray-600 dark:text-gray-400">
+          <details className="text-sm text-gray-600">
             <summary className="cursor-pointer text-indigo-600 hover:text-indigo-700">
               Step 1: Outer container layout
             </summary>
@@ -77,7 +77,7 @@ export function AnimationActivity() {
               and background: <InlineCode>border border-emerald-200 bg-emerald-50</InlineCode>.
             </p>
           </details>
-          <details className="text-sm text-gray-600 dark:text-gray-400">
+          <details className="text-sm text-gray-600">
             <summary className="cursor-pointer text-indigo-600 hover:text-indigo-700">
               Step 2: Check icon circle
             </summary>
@@ -89,7 +89,7 @@ export function AnimationActivity() {
               . Put a white ✓ inside with <InlineCode>text-white text-sm font-bold</InlineCode>.
             </p>
           </details>
-          <details className="text-sm text-gray-600 dark:text-gray-400">
+          <details className="text-sm text-gray-600">
             <summary className="cursor-pointer text-indigo-600 hover:text-indigo-700">
               Step 3: Text content
             </summary>
@@ -99,7 +99,7 @@ export function AnimationActivity() {
               <InlineCode>text-xs text-emerald-600</InlineCode>.
             </p>
           </details>
-          <details className="text-sm text-gray-600 dark:text-gray-400">
+          <details className="text-sm text-gray-600">
             <summary className="cursor-pointer text-indigo-600 hover:text-indigo-700">
               Step 4: Dismiss button
             </summary>
@@ -111,7 +111,7 @@ export function AnimationActivity() {
               .
             </p>
           </details>
-          <details className="text-sm text-gray-600 dark:text-gray-400">
+          <details className="text-sm text-gray-600">
             <summary className="cursor-pointer text-indigo-600 hover:text-indigo-700">
               Step 5: Add the animation
             </summary>
@@ -125,7 +125,7 @@ export function AnimationActivity() {
       </ExampleCard>
 
       <ExampleCard title="Reference Solution" description="Expand when you're done or stuck.">
-        <details className="text-sm text-gray-600 dark:text-gray-400">
+        <details className="text-sm text-gray-600">
           <summary className="cursor-pointer text-indigo-600 hover:text-indigo-700">
             Show solution
           </summary>
@@ -137,8 +137,8 @@ export function AnimationActivity() {
   return (
     <div className="animate-slide-up flex items-center gap-3
       p-4 rounded-lg border border-emerald-200
-      dark:border-emerald-800 bg-emerald-50
-      dark:bg-emerald-950">
+      bg-emerald-50
+     ">
 
       <div className="shrink-0 w-9 h-9 rounded-full
         bg-emerald-500 flex items-center justify-center">
@@ -148,20 +148,20 @@ export function AnimationActivity() {
 
       <div className="flex-1 min-w-0">
         <p className="text-sm font-medium
-          text-emerald-900 dark:text-emerald-100">
+          text-emerald-900">
           Changes saved
         </p>
         <p className="text-xs text-emerald-600
-          dark:text-emerald-400">
+         ">
           Your settings have been updated successfully.
         </p>
       </div>
 
       <button className="shrink-0 px-3 py-1 rounded
         text-xs font-medium text-emerald-700
-        dark:text-emerald-300
+       
         hover:bg-emerald-100
-        dark:hover:bg-emerald-900
+       :bg-emerald-900
         transition-colors">
         Dismiss
       </button>
@@ -179,7 +179,7 @@ export function AnimationActivity() {
         description="Always honor the user's motion preferences."
       >
         <div className="space-y-4">
-          <p className="text-sm text-gray-700 dark:text-gray-300">
+          <p className="text-sm text-gray-700">
             Some users experience motion sickness or have vestibular disorders. The{" "}
             <InlineCode>prefers-reduced-motion</InlineCode> media query lets you disable or simplify
             animations for them.

@@ -1,9 +1,9 @@
 import type { ReactNode } from "react";
 
 const variants = {
-  neutral: "bg-gray-100 dark:bg-gray-800",
-  accent: "bg-indigo-100 dark:bg-indigo-900",
-  warning: "bg-amber-100 dark:bg-amber-900",
+  neutral: "bg-gray-100",
+  accent: "bg-indigo-100",
+  warning: "bg-amber-100",
 };
 
 interface InlineCodeProps {

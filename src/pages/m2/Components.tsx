@@ -10,9 +10,9 @@ interface BadgeProps {
 
 function Badge({ label, variant = "default" }: BadgeProps) {
   const colors = {
-    default: "bg-gray-100 text-gray-800 dark:bg-gray-800 dark:text-gray-200",
-    success: "bg-emerald-100 text-emerald-800 dark:bg-emerald-900 dark:text-emerald-200",
-    warning: "bg-amber-100 text-amber-800 dark:bg-amber-900 dark:text-amber-200",
+    default: "bg-gray-100 text-gray-800",
+    success: "bg-emerald-100 text-emerald-800",
+    warning: "bg-amber-100 text-amber-800",
   };
 
   return (
@@ -29,8 +29,8 @@ interface CardProps {
 
 function Card({ title, children }: CardProps) {
   return (
-    <div className="border border-gray-200 dark:border-gray-700 rounded-lg p-4">
-      <h4 className="font-semibold text-gray-900 dark:text-gray-100 mb-2">{title}</h4>
+    <div className="border border-gray-200 rounded-lg p-4">
+      <h4 className="font-semibold text-gray-900 mb-2">{title}</h4>
       {children}
     </div>
   );
@@ -45,13 +45,13 @@ export function Components() {
   return (
     <div className="max-w-3xl space-y-8">
       <div>
-        <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100">Component Anatomy</h2>
+        <h2 className="text-2xl font-bold text-gray-900">Component Anatomy</h2>
         <p className="text-gray-500 mt-1">
           What a component looks like, how it receives data, and how to organize them.
         </p>
       </div>
 
-      <div className="p-4 bg-emerald-50 dark:bg-emerald-950 border border-emerald-200 dark:border-emerald-800 rounded-lg text-sm text-emerald-800 dark:text-emerald-200 space-y-2">
+      <div className="p-4 bg-emerald-50 border border-emerald-200 rounded-lg text-sm text-emerald-800 space-y-2">
         <p>
           A component is a function that returns JSX. It receives data through props and can wrap
           content using the children prop. Components are the building blocks of every React app.
@@ -103,7 +103,7 @@ function Badge({ label, variant }: BadgeProps) {
         description="The children prop lets a component wrap any content passed between its tags."
       >
         <Card title="Example Card">
-          <p className="text-sm text-gray-600 dark:text-gray-400">
+          <p className="text-sm text-gray-600">
             This paragraph is passed as <InlineCode>children</InlineCode> to the Card component.
           </p>
         </Card>
@@ -169,19 +169,19 @@ function Card({ title, children }: CardProps) {
         description="How structure differs between a plain React project and a Next.js project."
       >
         <div className="space-y-5">
-          <div className="p-3 bg-gray-100 dark:bg-gray-800 rounded text-xs text-gray-500">
+          <div className="p-3 bg-gray-100 rounded text-xs text-gray-500">
             React doesn&apos;t enforce any file structure. It&apos;s all convention, so your team
             picks a pattern and sticks with it. Next.js adds opinions through the app/ directory,
             which gives you a natural place to co-locate components alongside routes.
           </div>
 
           <div>
-            <h4 className="text-sm font-semibold text-gray-900 dark:text-gray-100 mb-2">
+            <h4 className="text-sm font-semibold text-gray-900 mb-2">
               React (no framework): Common Approaches
             </h4>
             <div className="grid gap-3 sm:grid-cols-2">
-              <div className="border border-gray-200 dark:border-gray-700 rounded-lg p-3">
-                <p className="text-xs font-medium text-gray-900 dark:text-gray-100 mb-1">
+              <div className="border border-gray-200 rounded-lg p-3">
+                <p className="text-xs font-medium text-gray-900 mb-1">
                   Group by type
                 </p>
                 <p className="text-xs text-gray-500 mb-2">
@@ -201,8 +201,8 @@ function Card({ title, children }: CardProps) {
     formatDate.ts`}</CodeBlock.Content>
                 </CodeBlock.Root>
               </div>
-              <div className="border border-gray-200 dark:border-gray-700 rounded-lg p-3">
-                <p className="text-xs font-medium text-gray-900 dark:text-gray-100 mb-1">
+              <div className="border border-gray-200 rounded-lg p-3">
+                <p className="text-xs font-medium text-gray-900 mb-1">
                   Group by feature
                 </p>
                 <p className="text-xs text-gray-500 mb-2">
@@ -229,7 +229,7 @@ function Card({ title, children }: CardProps) {
           </div>
 
           <div>
-            <h4 className="text-sm font-semibold text-gray-900 dark:text-gray-100 mb-2">
+            <h4 className="text-sm font-semibold text-gray-900 mb-2">
               Next.js: The Framework Adds Structure
             </h4>
             <p className="text-xs text-gray-500 mb-2">
@@ -237,8 +237,8 @@ function Card({ title, children }: CardProps) {
               and loading.tsx have special meaning. Components have two natural homes:
             </p>
             <div className="grid gap-3 sm:grid-cols-2">
-              <div className="border border-gray-200 dark:border-gray-700 rounded-lg p-3">
-                <p className="text-xs font-medium text-gray-900 dark:text-gray-100 mb-1">
+              <div className="border border-gray-200 rounded-lg p-3">
+                <p className="text-xs font-medium text-gray-900 mb-1">
                   components/ folder (shared)
                 </p>
                 <p className="text-xs text-gray-500 mb-2">
@@ -253,8 +253,8 @@ function Card({ title, children }: CardProps) {
   SearchInput.tsx`}</CodeBlock.Content>
                 </CodeBlock.Root>
               </div>
-              <div className="border border-gray-200 dark:border-gray-700 rounded-lg p-3">
-                <p className="text-xs font-medium text-gray-900 dark:text-gray-100 mb-1">
+              <div className="border border-gray-200 rounded-lg p-3">
+                <p className="text-xs font-medium text-gray-900 mb-1">
                   Co-located in app/ (route-specific)
                 </p>
                 <p className="text-xs text-gray-500 mb-2">
@@ -273,7 +273,7 @@ function Card({ title, children }: CardProps) {
                 </CodeBlock.Root>
               </div>
             </div>
-            <div className="mt-3 p-3 bg-amber-50 dark:bg-amber-950 border border-amber-200 dark:border-amber-800 rounded text-xs text-amber-800 dark:text-amber-200">
+            <div className="mt-3 p-3 bg-amber-50 border border-amber-200 rounded text-xs text-amber-800">
               <span className="font-medium">When does a component &quot;graduate&quot;?</span> When
               a second, unrelated page needs it. That&apos;s the signal to move it from co-located
               to the shared components/ folder. Moving it later is straightforward.

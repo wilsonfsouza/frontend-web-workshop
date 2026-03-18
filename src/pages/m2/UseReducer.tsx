@@ -32,13 +32,13 @@ export function UseReducer() {
   return (
     <div className="max-w-3xl space-y-8">
       <div>
-        <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100">useReducer</h2>
+        <h2 className="text-2xl font-bold text-gray-900">useReducer</h2>
         <p className="text-gray-500 mt-1">
           Manage coupled state transitions — when multiple values always change together.
         </p>
       </div>
 
-      <div className="p-4 bg-emerald-50 dark:bg-emerald-950 border border-emerald-200 dark:border-emerald-800 rounded-lg text-sm text-emerald-800 dark:text-emerald-200 space-y-2">
+      <div className="p-4 bg-emerald-50 border border-emerald-200 rounded-lg text-sm text-emerald-800 space-y-2">
         <p>
           useReducer works like useState, but instead of updating the value directly, you describe
           what happened (an "action") and a reducer function decides how the state should change.
@@ -63,7 +63,7 @@ export function UseReducer() {
               Start Wizard
             </button>
           ) : (
-            <div className="border border-gray-200 dark:border-gray-700 rounded-lg p-4 space-y-4">
+            <div className="border border-gray-200 rounded-lg p-4 space-y-4">
               <div className="flex items-center justify-between">
                 <span className="text-xs text-gray-500 uppercase tracking-wider">
                   Step {state.step + 1} of {steps.length}
@@ -73,7 +73,7 @@ export function UseReducer() {
                     <div
                       key={i}
                       className={`w-2 h-2 rounded-full ${
-                        i <= state.step ? "bg-indigo-600" : "bg-gray-200 dark:bg-gray-700"
+                        i <= state.step ? "bg-indigo-600" : "bg-gray-200"
                       }`}
                     />
                   ))}
@@ -81,10 +81,10 @@ export function UseReducer() {
               </div>
 
               <div>
-                <h4 className="font-semibold text-gray-900 dark:text-gray-100">
+                <h4 className="font-semibold text-gray-900">
                   {steps[state.step].title}
                 </h4>
-                <p className="text-sm text-gray-600 dark:text-gray-400 mt-1">
+                <p className="text-sm text-gray-600 mt-1">
                   {steps[state.step].content}
                 </p>
               </div>
@@ -93,7 +93,7 @@ export function UseReducer() {
                 {state.step > 0 && (
                   <button
                     onClick={() => dispatch({ type: "PREV" })}
-                    className="px-3 py-1.5 text-sm bg-gray-200 dark:bg-gray-700 rounded hover:bg-gray-300 transition-colors"
+                    className="px-3 py-1.5 text-sm bg-gray-200 rounded hover:bg-gray-300 transition-colors"
                   >
                     Back
                   </button>
@@ -123,7 +123,7 @@ export function UseReducer() {
             </div>
           )}
 
-          <div className="p-3 bg-gray-50 dark:bg-gray-900 rounded font-mono text-sm">
+          <div className="p-3 bg-gray-50 rounded font-mono text-sm">
             <p className="text-gray-500">// Current state</p>
             <p>{JSON.stringify(state)}</p>
           </div>

@@ -6,11 +6,11 @@ export function Scope() {
   return (
     <div className="max-w-3xl space-y-8">
       <div>
-        <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100">Scope</h2>
+        <h2 className="text-2xl font-bold text-gray-900">Scope</h2>
         <p className="text-gray-500 mt-1">Where variables live and who can see them.</p>
       </div>
 
-      <div className="p-4 bg-indigo-50 dark:bg-indigo-950 border border-indigo-200 dark:border-indigo-800 rounded-lg text-sm text-indigo-800 dark:text-indigo-200 space-y-2">
+      <div className="p-4 bg-indigo-50 border border-indigo-200 rounded-lg text-sm text-indigo-800 space-y-2">
         <p>
           Scope determines where a variable can be accessed. Think of it as the variable&apos;s
           &quot;visibility&quot; — some variables can be seen everywhere, others only inside a
@@ -77,7 +77,7 @@ counter.increment();
 counter.increment();
 counter.getCount(); // 2`}</CodeBlock.Content>
         </CodeBlock.Root>
-        <div className="mt-3 p-3 bg-amber-50 dark:bg-amber-950 rounded text-sm text-amber-700 dark:text-amber-300">
+        <div className="mt-3 p-3 bg-amber-50 rounded text-sm text-amber-700">
           In React, closures are why event handlers can access state variables — the handler
           function &quot;closes over&quot; the state from the render where it was created.
         </div>
@@ -88,8 +88,8 @@ counter.getCount(); // 2`}</CodeBlock.Content>
         description="Each file is its own scope. Use export/import to share between files."
       >
         <div className="space-y-3">
-          <div className="rounded overflow-hidden border border-gray-200 dark:border-gray-700">
-            <div className="px-3 py-1.5 bg-gray-100 dark:bg-gray-800 text-xs text-gray-500">
+          <div className="rounded overflow-hidden border border-gray-200">
+            <div className="px-3 py-1.5 bg-gray-100 text-xs text-gray-500">
               utils.ts
             </div>
             <CodeBlock.Root>
@@ -100,8 +100,8 @@ export function fetchUsers() {
 }`}</CodeBlock.Content>
             </CodeBlock.Root>
           </div>
-          <div className="rounded overflow-hidden border border-gray-200 dark:border-gray-700">
-            <div className="px-3 py-1.5 bg-gray-100 dark:bg-gray-800 text-xs text-gray-500">
+          <div className="rounded overflow-hidden border border-gray-200">
+            <div className="px-3 py-1.5 bg-gray-100 text-xs text-gray-500">
               app.ts
             </div>
             <CodeBlock.Root>

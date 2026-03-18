@@ -7,16 +7,16 @@ export function Layout() {
   const navModules = useNavModules();
 
   return (
-    <div className="flex flex-col md:flex-row min-h-screen bg-white dark:bg-gray-950">
+    <div className="flex flex-col md:flex-row min-h-screen bg-white">
       <a href="#main-content" className="skip-link">
         Skip to main content
       </a>
 
       {/* Mobile nav */}
-      <div className="md:hidden border-b-2 border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-900 shadow-sm">
+      <div className="md:hidden border-b-2 border-gray-200 bg-gray-50 shadow-sm">
         <details className="group">
           <summary className="flex items-center justify-between px-4 py-3 cursor-pointer list-none">
-            <span className="text-lg font-semibold text-gray-900 dark:text-gray-100">
+            <span className="text-lg font-semibold text-gray-900">
               Web Dev Workshop
             </span>
             <svg
@@ -32,7 +32,7 @@ export function Layout() {
           </summary>
           <nav
             aria-label="Workshop navigation"
-            className="px-4 py-3 border-t border-gray-200 dark:border-gray-700 max-h-[70vh] overflow-y-auto"
+            className="px-4 py-3 border-t border-gray-200 max-h-[70vh] overflow-y-auto"
           >
             <Navigation {...navModules} />
             <div className="mt-4">
@@ -43,9 +43,9 @@ export function Layout() {
       </div>
 
       {/* Desktop sidebar */}
-      <aside className="hidden md:flex md:flex-col w-64 shrink-0 border-r border-gray-200 dark:border-gray-800">
+      <aside className="hidden md:flex md:flex-col w-64 shrink-0 border-r border-gray-200">
         <div className="flex-1 overflow-y-auto p-4">
-          <h1 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-4">
+          <h1 className="text-lg font-semibold text-gray-900 mb-4">
             Web Dev Workshop
           </h1>
           <nav aria-label="Workshop navigation">

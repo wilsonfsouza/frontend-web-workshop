@@ -18,7 +18,7 @@ export function ComponentsActivity() {
   return (
     <div className="max-w-4xl space-y-8">
       <div>
-        <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100">
+        <h2 className="text-2xl font-bold text-gray-900">
           Activity: The UI Blueprint
         </h2>
         <p className="text-gray-500 mt-1">
@@ -26,7 +26,7 @@ export function ComponentsActivity() {
         </p>
       </div>
 
-      <div className="p-4 bg-indigo-50 dark:bg-indigo-950 border border-indigo-200 dark:border-indigo-800 rounded-lg text-sm text-indigo-800 dark:text-indigo-200 space-y-2">
+      <div className="p-4 bg-indigo-50 border border-indigo-200 rounded-lg text-sm text-indigo-800 space-y-2">
         <p>
           Think of a complex website like a Lego set. The finished model on the box looks like one
           solid object, but to build it you need to understand how individual bricks click together
@@ -58,7 +58,7 @@ export function ComponentsActivity() {
                 key={zone.id}
                 type="button"
                 onClick={() => toggle(zone.id)}
-                className="w-full text-left p-3 rounded-lg border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 transition-colors"
+                className="w-full text-left p-3 rounded-lg border border-gray-200 hover:border-gray-400:border-gray-500 transition-colors"
               >
                 <div className="flex items-center gap-2">
                   <span
@@ -66,7 +66,7 @@ export function ComponentsActivity() {
                   >
                     {zone.level}
                   </span>
-                  <span className="text-sm font-medium text-gray-900 dark:text-gray-100">
+                  <span className="text-sm font-medium text-gray-900">
                     {isRevealed ? zone.label : `Component ${ZONES.indexOf(zone) + 1}`}
                   </span>
                   <span className="ml-auto text-xs text-gray-400">{isRevealed ? "▲" : "▼"}</span>
@@ -82,14 +82,14 @@ export function ComponentsActivity() {
           <button
             type="button"
             onClick={() => setRevealed(new Set(ZONES.map((z) => z.id)))}
-            className="text-xs px-3 py-1.5 rounded bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-700"
+            className="text-xs px-3 py-1.5 rounded bg-gray-100 text-gray-600 hover:bg-gray-200:bg-gray-700"
           >
             Reveal all
           </button>
           <button
             type="button"
             onClick={() => setRevealed(new Set())}
-            className="text-xs px-3 py-1.5 rounded bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-700"
+            className="text-xs px-3 py-1.5 rounded bg-gray-100 text-gray-600 hover:bg-gray-200:bg-gray-700"
           >
             Reset
           </button>
@@ -100,30 +100,30 @@ export function ComponentsActivity() {
         title="Discussion"
         description="Think about these once you've identified the components."
       >
-        <ul className="space-y-3 text-sm text-gray-600 dark:text-gray-400">
+        <ul className="space-y-3 text-sm text-gray-600">
           <li>
-            <span className="font-medium text-gray-900 dark:text-gray-100">
+            <span className="font-medium text-gray-900">
               Repetition signals a component.
             </span>{" "}
             If you see the same visual pattern more than once (cards, columns, avatars), that
             pattern is almost certainly its own component.
           </li>
           <li>
-            <span className="font-medium text-gray-900 dark:text-gray-100">
+            <span className="font-medium text-gray-900">
               Components nest inside each other.
             </span>{" "}
             A Column contains Cards. A Card contains Avatars and Badges. This nesting is exactly how
             you structure your code.
           </li>
           <li>
-            <span className="font-medium text-gray-900 dark:text-gray-100">
+            <span className="font-medium text-gray-900">
               Props are the differences.
             </span>{" "}
             Every Task Card has the same shape but different content. The content that changes
             between instances becomes props.
           </li>
           <li>
-            <span className="font-medium text-gray-900 dark:text-gray-100">
+            <span className="font-medium text-gray-900">
               Scope determines location.
             </span>{" "}
             The Navbar is used on every page, so it lives in a shared components/ folder. A card

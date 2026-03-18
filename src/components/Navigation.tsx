@@ -9,8 +9,8 @@ interface GetLinkClassName {
 const getLinkClassName = ({ isActive }: GetLinkClassName) =>
   `block px-3 py-1.5 rounded text-sm ${
     isActive
-      ? "bg-indigo-100 text-indigo-800 font-medium dark:bg-indigo-900 dark:text-indigo-200"
-      : "text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-800"
+      ? "bg-indigo-100 text-indigo-800 font-medium"
+      : "text-gray-600 hover:bg-gray-100:bg-gray-800"
   }`;
 
 interface NavLinkEntryProps {
@@ -35,7 +35,7 @@ interface NavSubGroupEntryProps {
 function NavSubGroupEntry({ group }: NavSubGroupEntryProps) {
   return (
     <div className="mt-2">
-      <p className="px-3 mb-0.5 text-[11px] font-medium text-gray-400 dark:text-gray-400">
+      <p className="px-3 mb-0.5 text-[11px] font-medium text-gray-400">
         {group.subheading}
       </p>
       <div className="flex flex-col gap-0.5">
@@ -61,7 +61,7 @@ function NavGroupEntry({ group, index, isOpen, onToggle }: NavGroupEntryProps) {
 
   return (
     <div
-      className="border-b border-gray-100 dark:border-gray-800 pb-2 mt-2"
+      className="border-b border-gray-100 pb-2 mt-2"
       role="group"
       aria-labelledby={headingId}
     >
@@ -69,7 +69,7 @@ function NavGroupEntry({ group, index, isOpen, onToggle }: NavGroupEntryProps) {
         id={headingId}
         onClick={onToggle}
         aria-expanded={isOpen}
-        className="w-full flex items-center justify-between px-3 py-2 text-xs font-semibold uppercase tracking-wider text-gray-400 dark:text-gray-300 hover:text-gray-600 dark:hover:text-gray-100 cursor-pointer rounded transition-colors"
+        className="w-full flex items-center justify-between px-3 py-2 text-xs font-semibold uppercase tracking-wider text-gray-400 hover:text-gray-600:text-gray-100 cursor-pointer rounded transition-colors"
       >
         <span className="text-left">{group.heading}</span>
         <svg

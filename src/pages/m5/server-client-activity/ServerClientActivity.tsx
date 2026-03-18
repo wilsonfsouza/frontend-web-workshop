@@ -25,7 +25,7 @@ export function ServerClientActivity() {
   const totalCorrect = QUIZ_ITEMS.filter((quiz) => quizGuesses[quiz.id] === quiz.answer).length;
 
   return (
-    <div className="max-w-3xl space-y-8">
+    <div className="max-w-6xl space-y-8">
       <div>
         <h2 className="text-2xl font-bold text-gray-900">
           Activity: Server or Client?

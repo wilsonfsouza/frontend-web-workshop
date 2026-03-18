@@ -25,7 +25,7 @@ export function UseState() {
   );
 
   return (
-    <div className="max-w-3xl space-y-8">
+    <div className="max-w-6xl space-y-8">
       <div>
         <h2 className="text-2xl font-bold text-gray-900">useState</h2>
         <p className="text-gray-500 mt-1">Track values that trigger re-renders when they change.</p>

@@ -60,7 +60,7 @@ export function UseEffect() {
   }, []);
 
   return (
-    <div className="max-w-3xl space-y-8">
+    <div className="max-w-6xl space-y-8">
       <div>
         <h2 className="text-2xl font-bold text-gray-900">useEffect</h2>
         <p className="text-gray-500 mt-1">

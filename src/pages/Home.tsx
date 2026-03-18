@@ -1,6 +1,6 @@
 export function Home() {
   return (
-    <div className="max-w-2xl space-y-6">
+    <div className="max-w-6xl space-y-6">
       <h2 className="text-3xl font-bold text-gray-900">
         Web Application Development Workshop
       </h2>

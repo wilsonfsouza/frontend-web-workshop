@@ -49,7 +49,7 @@ function CodeBlockTitle({ children, className = "", ...rest }: CodeBlockTitlePro
 CodeBlockTitle.displayname = "CodeBlockTitle";
 
 const variants = {
-  "bg-gray-950 text-gray-100",
+  dark: "bg-gray-950 text-gray-100",
   light: "bg-gray-50 rounded",
 };
 

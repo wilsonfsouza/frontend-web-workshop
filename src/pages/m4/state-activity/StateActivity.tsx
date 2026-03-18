@@ -16,9 +16,9 @@ export function StateActivity() {
   }
 
   return (
-    <div className="max-w-3xl space-y-8">
+    <div className="max-w-6xl space-y-8">
       <div>
-        <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100">
+        <h2 className="text-2xl font-bold text-gray-900">
           Activity: State Management Decisions
         </h2>
         <p className="text-gray-500 mt-1">
@@ -26,7 +26,7 @@ export function StateActivity() {
         </p>
       </div>
 
-      <div className="p-4 bg-indigo-50 dark:bg-indigo-950 border border-indigo-200 dark:border-indigo-800 rounded-lg text-sm text-indigo-800 dark:text-indigo-200 space-y-2">
+      <div className="p-4 bg-indigo-50 border border-indigo-200 rounded-lg text-sm text-indigo-800 space-y-2">
         <p>
           For each scenario, identify which state management approach fits best and think about your
           reasoning (1-2 sentences). Features often need multiple state types working together, so
@@ -61,14 +61,14 @@ export function StateActivity() {
         <button
           type="button"
           onClick={() => setRevealed(new Set(SCENARIOS.map((s) => s.id)))}
-          className="text-xs px-3 py-1.5 rounded bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-700"
+          className="text-xs px-3 py-1.5 rounded bg-gray-100 text-gray-600 hover:bg-gray-200:bg-gray-700"
         >
           Reveal all answers
         </button>
         <button
           type="button"
           onClick={() => setRevealed(new Set())}
-          className="text-xs px-3 py-1.5 rounded bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-700"
+          className="text-xs px-3 py-1.5 rounded bg-gray-100 text-gray-600 hover:bg-gray-200:bg-gray-700"
         >
           Reset
         </button>
@@ -78,7 +78,7 @@ export function StateActivity() {
         title="Discussion Questions"
         description="Talk through these after reviewing the answers."
       >
-        <div className="space-y-3 text-sm text-gray-600 dark:text-gray-400">
+        <div className="space-y-3 text-sm text-gray-600">
           <details>
             <summary className="cursor-pointer text-indigo-600 hover:text-indigo-700 text-xs">
               Why combine URL state and HTTP state in Scenario 1?
@@ -120,31 +120,31 @@ export function StateActivity() {
       </ExampleCard>
 
       <ExampleCard title="Key Takeaways">
-        <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-400">
+        <ul className="space-y-2 text-sm text-gray-600">
           <li>
-            <span className="font-medium text-gray-900 dark:text-gray-100">Start simple.</span>{" "}
+            <span className="font-medium text-gray-900">Start simple.</span>{" "}
             Don&apos;t reach for global state or libraries until you feel the pain.
           </li>
           <li>
-            <span className="font-medium text-gray-900 dark:text-gray-100">
+            <span className="font-medium text-gray-900">
               URL state is underused.
             </span>{" "}
             If it should be shareable, put it in the URL.
           </li>
           <li>
-            <span className="font-medium text-gray-900 dark:text-gray-100">
+            <span className="font-medium text-gray-900">
               Context for scoped sharing.
             </span>{" "}
             Perfect for component libraries and feature-scoped state.
           </li>
           <li>
-            <span className="font-medium text-gray-900 dark:text-gray-100">
+            <span className="font-medium text-gray-900">
               Update frequency matters.
             </span>{" "}
             Frequent updates → Zustand. Rare updates → Context.
           </li>
           <li>
-            <span className="font-medium text-gray-900 dark:text-gray-100">
+            <span className="font-medium text-gray-900">
               Combine approaches.
             </span>{" "}
             Apps use multiple strategies working together.

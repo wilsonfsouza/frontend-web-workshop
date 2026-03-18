@@ -21,7 +21,7 @@ interface CodeBlockFrameProps extends ComponentProps<"div"> {
 function CodeBlockFrame({ children, className = "", ...rest }: CodeBlockFrameProps) {
   return (
     <div
-      className={`rounded-lg border border-gray-200 dark:border-gray-700 overflow-hidden ${className}`}
+      className={`rounded-lg border border-gray-200 overflow-hidden ${className}`}
       {...rest}
     >
       {children}
@@ -38,7 +38,7 @@ interface CodeBlockTitleProps extends ComponentProps<"span"> {
 function CodeBlockTitle({ children, className = "", ...rest }: CodeBlockTitleProps) {
   return (
     <span
-      className={`px-4 py-2 bg-gray-50 dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700 text-xs font-mono text-gray-500 flex ${className}`}
+      className={`px-4 py-2 bg-gray-50 border-b border-gray-200 text-xs font-mono text-gray-500 flex ${className}`}
       {...rest}
     >
       {children}
@@ -50,7 +50,7 @@ CodeBlockTitle.displayname = "CodeBlockTitle";
 
 const variants = {
   dark: "bg-gray-950 text-gray-100",
-  light: "bg-gray-50 dark:bg-gray-900 rounded",
+  light: "bg-gray-50 rounded",
 };
 
 interface CodeBlockContentProps extends ComponentProps<"pre"> {

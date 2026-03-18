@@ -5,9 +5,9 @@ import { Table } from "@/components/Table";
 
 export function NextjsIntro() {
   return (
-    <div className="max-w-3xl space-y-8">
+    <div className="max-w-6xl space-y-8">
       <div>
-        <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100">
+        <h2 className="text-2xl font-bold text-gray-900">
           Introduction to Next.js
         </h2>
         <p className="text-gray-500 mt-1">
@@ -16,7 +16,7 @@ export function NextjsIntro() {
         </p>
       </div>
 
-      <div className="p-4 bg-indigo-50 dark:bg-indigo-950 border border-indigo-200 dark:border-indigo-800 rounded-lg text-sm text-indigo-800 dark:text-indigo-200 space-y-2">
+      <div className="p-4 bg-indigo-50 border border-indigo-200 rounded-lg text-sm text-indigo-800 space-y-2">
         <p>
           If you know React, you already know most of Next.js. The framework adds structure and
           conventions on top of what React gives you. Instead of wiring together a bundler, a
@@ -95,26 +95,26 @@ export function NextjsIntro() {
         └── page.tsx      →  /docs/any/number/of/segments`}</CodeBlock.Content>
             </CodeBlock.Frame>
           </CodeBlock.Root>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-gray-600 dark:text-gray-400">
-            <div className="p-2.5 bg-gray-50 dark:bg-gray-900 rounded">
-              <span className="font-mono font-medium text-gray-900 dark:text-gray-100">[slug]</span>{" "}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-gray-600">
+            <div className="p-2.5 bg-gray-50 rounded">
+              <span className="font-mono font-medium text-gray-900">[slug]</span>{" "}
               creates dynamic segments
             </div>
-            <div className="p-2.5 bg-gray-50 dark:bg-gray-900 rounded">
-              <span className="font-mono font-medium text-gray-900 dark:text-gray-100">
+            <div className="p-2.5 bg-gray-50 rounded">
+              <span className="font-mono font-medium text-gray-900">
                 (group)
               </span>{" "}
               organizes files without affecting the URL
             </div>
-            <div className="p-2.5 bg-gray-50 dark:bg-gray-900 rounded">
-              <span className="font-mono font-medium text-gray-900 dark:text-gray-100">
+            <div className="p-2.5 bg-gray-50 rounded">
+              <span className="font-mono font-medium text-gray-900">
                 [...slug]
               </span>{" "}
               catches any number of segments
             </div>
-            <div className="p-2.5 bg-gray-50 dark:bg-gray-900 rounded">
+            <div className="p-2.5 bg-gray-50 rounded">
               No{" "}
-              <span className="font-mono font-medium text-gray-900 dark:text-gray-100">
+              <span className="font-mono font-medium text-gray-900">
                 page.tsx
               </span>{" "}
               = no route (folder is just for organization)
@@ -155,7 +155,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
       >
         <div className="space-y-4">
           <div>
-            <p className="text-xs font-semibold text-gray-900 dark:text-gray-100 mb-2">
+            <p className="text-xs font-semibold text-gray-900 mb-2">
               layout.tsx: Shared UI that wraps pages
             </p>
             <p className="text-xs text-gray-500 mb-2">
@@ -183,7 +183,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
             </CodeBlock.Root>
           </div>
           <div>
-            <p className="text-xs font-semibold text-gray-900 dark:text-gray-100 mb-2">
+            <p className="text-xs font-semibold text-gray-900 mb-2">
               loading.tsx: Instant loading states
             </p>
             <p className="text-xs text-gray-500 mb-2">
@@ -250,7 +250,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         <div className="space-y-4">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             <div>
-              <p className="text-xs font-semibold text-gray-900 dark:text-gray-100 mb-2">
+              <p className="text-xs font-semibold text-gray-900 mb-2">
                 Server Component (default)
               </p>
               <CodeBlock.Root>
@@ -272,7 +272,7 @@ export default async function UserList() {
               </CodeBlock.Root>
             </div>
             <div>
-              <p className="text-xs font-semibold text-gray-900 dark:text-gray-100 mb-2">
+              <p className="text-xs font-semibold text-gray-900 mb-2">
                 Client Component (opt in)
               </p>
               <CodeBlock.Root>
@@ -294,7 +294,7 @@ export default function Counter() {
               </CodeBlock.Root>
             </div>
           </div>
-          <div className="p-3 bg-amber-50 dark:bg-amber-950 border border-amber-200 dark:border-amber-800 rounded text-xs text-amber-800 dark:text-amber-200">
+          <div className="p-3 bg-amber-50 border border-amber-200 rounded text-xs text-amber-800">
             Keep Client Components small and isolated. Fetch data in Server Components, pass it as
             props to Client Components that handle interaction. This topic has its own dedicated
             workshop that goes deeper into the rules and patterns.
@@ -350,37 +350,37 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
       </ExampleCard>
 
       <ExampleCard title="Key Takeaways">
-        <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-400">
+        <ul className="space-y-2 text-sm text-gray-600">
           <li>
-            <span className="font-medium text-gray-900 dark:text-gray-100">
+            <span className="font-medium text-gray-900">
               Next.js is React with structure
             </span>{" "}
             that adds routing, server rendering, and conventions on top.
           </li>
           <li>
-            <span className="font-medium text-gray-900 dark:text-gray-100">Files are routes.</span>{" "}
+            <span className="font-medium text-gray-900">Files are routes.</span>{" "}
             The app/ folder structure maps directly to URLs.
           </li>
           <li>
-            <span className="font-medium text-gray-900 dark:text-gray-100">
+            <span className="font-medium text-gray-900">
               Special filenames are conventions.
             </span>{" "}
             page.tsx, layout.tsx, and loading.tsx are the ones you&apos;ll use daily.
           </li>
           <li>
-            <span className="font-medium text-gray-900 dark:text-gray-100">
+            <span className="font-medium text-gray-900">
               Server Components are the default.
             </span>{" "}
             Add &quot;use client&quot; only when you need interactivity.
           </li>
           <li>
-            <span className="font-medium text-gray-900 dark:text-gray-100">Start simple.</span> You
+            <span className="font-medium text-gray-900">Start simple.</span> You
             can build a full app with just page.tsx and layout.tsx.
           </li>
         </ul>
       </ExampleCard>
 
-      <div className="p-4 bg-amber-50 dark:bg-amber-950 border border-amber-200 dark:border-amber-800 rounded-lg text-sm text-amber-800 dark:text-amber-200">
+      <div className="p-4 bg-amber-50 border border-amber-200 rounded-lg text-sm text-amber-800">
         <p>
           🛠️ The hands-on exercises for this module live in a separate Next.js project. Check the{" "}
           <span className="font-medium">projects/</span> folder for the Next.js starter.

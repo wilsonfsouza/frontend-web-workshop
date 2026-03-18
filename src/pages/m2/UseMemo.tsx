@@ -63,9 +63,9 @@ export function UseMemo() {
   }, []);
 
   return (
-    <div className="max-w-3xl space-y-8">
+    <div className="max-w-6xl space-y-8">
       <div>
-        <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100">
+        <h2 className="text-2xl font-bold text-gray-900">
           useMemo & useCallback
         </h2>
         <p className="text-gray-500 mt-1">
@@ -73,7 +73,7 @@ export function UseMemo() {
         </p>
       </div>
 
-      <div className="p-4 bg-emerald-50 dark:bg-emerald-950 border border-emerald-200 dark:border-emerald-800 rounded-lg text-sm text-emerald-800 dark:text-emerald-200 space-y-2">
+      <div className="p-4 bg-emerald-50 border border-emerald-200 rounded-lg text-sm text-emerald-800 space-y-2">
         <p>
           <b>useMemo</b> memoizes an expensive computation so it only re-runs when its dependencies
           change.
@@ -105,22 +105,22 @@ export function UseMemo() {
             </span>
           </div>
           <div className="grid grid-cols-2 gap-4">
-            <div className="p-3 bg-red-50 dark:bg-red-950 rounded">
-              <p className="text-xs font-semibold text-red-700 dark:text-red-300 mb-1">
+            <div className="p-3 bg-red-50 rounded">
+              <p className="text-xs font-semibold text-red-700 mb-1">
                 Without useMemo
               </p>
               <p className="text-xs text-gray-500 mb-1">Sorts on every render</p>
-              <p className="text-xs font-mono text-gray-600 dark:text-gray-400 mb-2">
+              <p className="text-xs font-mono text-gray-600 mb-2">
                 Sort called: <span className="font-bold">{sortWithoutMemoRenderCount}x</span>
               </p>
               <p className="text-sm font-mono">{sortedWithoutMemo.join(", ")}</p>
             </div>
-            <div className="p-3 bg-emerald-50 dark:bg-emerald-950 rounded">
-              <p className="text-xs font-semibold text-emerald-700 dark:text-emerald-300 mb-1">
+            <div className="p-3 bg-emerald-50 rounded">
+              <p className="text-xs font-semibold text-emerald-700 mb-1">
                 With useMemo
               </p>
               <p className="text-xs text-gray-500 mb-1">Only sorts when items change</p>
-              <p className="text-xs font-mono text-gray-600 dark:text-gray-400 mb-2">
+              <p className="text-xs font-mono text-gray-600 mb-2">
                 Sort called: <span className="font-bold">{sortWithMemoRenderCount}x</span>
               </p>
               <p className="text-sm font-mono">{sortedWithMemo.join(", ")}</p>
@@ -135,8 +135,8 @@ export function UseMemo() {
       >
         <div className="space-y-3">
           <div className="grid grid-cols-2 gap-4">
-            <div className="p-3 bg-red-50 dark:bg-red-950 rounded">
-              <p className="text-xs font-semibold text-red-700 dark:text-red-300 mb-2">
+            <div className="p-3 bg-red-50 rounded">
+              <p className="text-xs font-semibold text-red-700 mb-2">
                 Without useCallback
               </p>
               <ExpensiveListMemoized
@@ -145,8 +145,8 @@ export function UseMemo() {
                 label="Child"
               />
             </div>
-            <div className="p-3 bg-emerald-50 dark:bg-emerald-950 rounded">
-              <p className="text-xs font-semibold text-emerald-700 dark:text-emerald-300 mb-2">
+            <div className="p-3 bg-emerald-50 rounded">
+              <p className="text-xs font-semibold text-emerald-700 mb-2">
                 With useCallback
               </p>
               <ExpensiveListMemoized
@@ -157,12 +157,12 @@ export function UseMemo() {
             </div>
           </div>
           {selected && <p className="text-sm text-emerald-600">Selected: {selected}</p>}
-          <div className="p-3 bg-amber-50 dark:bg-amber-950 rounded text-sm text-amber-700 dark:text-amber-300">
+          <div className="p-3 bg-amber-50 rounded text-sm text-amber-700">
             The &quot;without&quot; child re-renders every time because it receives a new function
             reference. The &quot;with&quot; child skips re-renders because useCallback keeps the
             same reference. This only matters when the child is wrapped in React.memo.
           </div>
-          <div className="p-3 bg-gray-100 dark:bg-gray-800 rounded text-xs text-gray-500">
+          <div className="p-3 bg-gray-100 rounded text-xs text-gray-500">
             Note: counts start at 2 because React StrictMode double-renders components in
             development to help catch side effects. This doesn&apos;t happen in production builds.
           </div>

@@ -110,14 +110,14 @@ export const OPTIONS = [
 
 export const OPTION_COLORS: Record<string, string> = {
   "Local state (useState / useReducer)":
-    "bg-gray-100 text-gray-800 dark:bg-gray-800 dark:text-gray-200",
+    "bg-gray-100 text-gray-800",
   "Global state (Context API)":
-    "bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-200",
-  "Global state (Zustand)": "bg-violet-100 text-violet-800 dark:bg-violet-900 dark:text-violet-200",
+    "bg-purple-100 text-purple-800",
+  "Global state (Zustand)": "bg-violet-100 text-violet-800",
   "HTTP state (TanStack Query)":
-    "bg-emerald-100 text-emerald-800 dark:bg-emerald-900 dark:text-emerald-200",
+    "bg-emerald-100 text-emerald-800",
   "URL state (nuqs / useSearchParams)":
-    "bg-amber-100 text-amber-800 dark:bg-amber-900 dark:text-amber-200",
+    "bg-amber-100 text-amber-800",
   "Server state (Server Components)":
-    "bg-indigo-100 text-indigo-800 dark:bg-indigo-900 dark:text-indigo-200",
+    "bg-indigo-100 text-indigo-800",
 };

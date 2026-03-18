@@ -5,9 +5,9 @@ import { Table } from "@/components/Table";
 
 export function TailwindIntro() {
   return (
-    <div className="max-w-3xl space-y-8">
+    <div className="max-w-6xl space-y-8">
       <div>
-        <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100">
+        <h2 className="text-2xl font-bold text-gray-900">
           Introduction to Tailwind CSS
         </h2>
         <p className="text-gray-500 mt-1">
@@ -15,7 +15,7 @@ export function TailwindIntro() {
         </p>
       </div>
 
-      <div className="p-4 bg-indigo-50 dark:bg-indigo-950 border border-indigo-200 dark:border-indigo-800 rounded-lg text-sm text-indigo-800 dark:text-indigo-200 space-y-2">
+      <div className="p-4 bg-indigo-50 border border-indigo-200 rounded-lg text-sm text-indigo-800 space-y-2">
         <p>
           Tailwind CSS replaces custom class names with small, single-purpose utility classes.
           Instead of writing <InlineCode variant="accent">.card</InlineCode> and defining it in a
@@ -153,10 +153,10 @@ export function TailwindIntro() {
           <CodeBlock.Frame>
             <CodeBlock.Title>ExampleCard.tsx</CodeBlock.Title>
             <CodeBlock.Content>{`<section className="rounded-lg border border-gray-200
-  dark:border-gray-700 p-6 space-y-4">
+  p-6 space-y-4">
   <div>
     <h3 className="text-lg font-semibold
-      text-gray-900 dark:text-gray-100">
+      text-gray-900">
       {title}
     </h3>
     {description && (
@@ -169,7 +169,7 @@ export function TailwindIntro() {
 </section>`}</CodeBlock.Content>
           </CodeBlock.Frame>
         </CodeBlock.Root>
-        <details className="text-sm text-gray-600 dark:text-gray-400 mt-3">
+        <details className="text-sm text-gray-600 mt-3">
           <summary className="cursor-pointer text-indigo-600 hover:text-indigo-700">
             Reading it out loud
           </summary>
@@ -191,10 +191,10 @@ export function TailwindIntro() {
         <div className="space-y-4">
           <div>
             <p className="text-xs font-medium text-gray-500 mb-2">flex items-center gap-4</p>
-            <div className="flex items-center gap-4 p-3 bg-gray-50 dark:bg-gray-900 rounded">
+            <div className="flex items-center gap-4 p-3 bg-gray-50 rounded">
               <div className="w-10 h-10 rounded-full bg-indigo-500" />
               <div>
-                <p className="text-sm font-medium text-gray-900 dark:text-gray-100">Wilson</p>
+                <p className="text-sm font-medium text-gray-900">Wilson</p>
                 <p className="text-xs text-gray-500">Engineer</p>
               </div>
             </div>
@@ -203,18 +203,18 @@ export function TailwindIntro() {
             <p className="text-xs font-medium text-gray-500 mb-2">
               flex items-center justify-between
             </p>
-            <div className="flex items-center justify-between p-3 bg-gray-50 dark:bg-gray-900 rounded">
-              <span className="text-sm font-bold text-gray-900 dark:text-gray-100">Logo</span>
+            <div className="flex items-center justify-between p-3 bg-gray-50 rounded">
+              <span className="text-sm font-bold text-gray-900">Logo</span>
               <span className="text-sm text-gray-500">Navigation →</span>
             </div>
           </div>
           <div>
             <p className="text-xs font-medium text-gray-500 mb-2">flex flex-col gap-2</p>
-            <div className="flex flex-col gap-2 p-3 bg-gray-50 dark:bg-gray-900 rounded">
-              <div className="h-8 bg-gray-200 dark:bg-gray-700 rounded px-3 flex items-center text-xs text-gray-500">
+            <div className="flex flex-col gap-2 p-3 bg-gray-50 rounded">
+              <div className="h-8 bg-gray-200 rounded px-3 flex items-center text-xs text-gray-500">
                 Input 1
               </div>
-              <div className="h-8 bg-gray-200 dark:bg-gray-700 rounded px-3 flex items-center text-xs text-gray-500">
+              <div className="h-8 bg-gray-200 rounded px-3 flex items-center text-xs text-gray-500">
                 Input 2
               </div>
               <div className="h-8 bg-indigo-600 rounded px-3 flex items-center text-xs text-white">
@@ -236,7 +236,7 @@ export function TailwindIntro() {
               {[1, 2, 3, 4, 5, 6].map((n) => (
                 <div
                   key={n}
-                  className="p-3 bg-indigo-50 dark:bg-indigo-950 border border-indigo-200 dark:border-indigo-800 rounded text-center text-sm font-medium text-indigo-700 dark:text-indigo-300"
+                  className="p-3 bg-indigo-50 border border-indigo-200 rounded text-center text-sm font-medium text-indigo-700"
                 >
                   {n}
                 </div>
@@ -248,22 +248,22 @@ export function TailwindIntro() {
               grid grid-cols-4 gap-3 (item 1 spans 2 columns, item 4 spans 2 rows)
             </p>
             <div className="grid grid-cols-4 gap-3">
-              <div className="col-span-2 p-3 bg-emerald-50 dark:bg-emerald-950 border border-emerald-200 dark:border-emerald-800 rounded text-center text-sm font-medium text-emerald-700 dark:text-emerald-300">
+              <div className="col-span-2 p-3 bg-emerald-50 border border-emerald-200 rounded text-center text-sm font-medium text-emerald-700">
                 col-span-2
               </div>
-              <div className="p-3 bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded text-center text-sm text-gray-600 dark:text-gray-400">
+              <div className="p-3 bg-gray-50 border border-gray-200 rounded text-center text-sm text-gray-600">
                 3
               </div>
-              <div className="row-span-2 p-3 bg-amber-50 dark:bg-amber-950 border border-amber-200 dark:border-amber-800 rounded text-center text-sm font-medium text-amber-700 dark:text-amber-300 flex items-center justify-center">
+              <div className="row-span-2 p-3 bg-amber-50 border border-amber-200 rounded text-center text-sm font-medium text-amber-700 flex items-center justify-center">
                 row-span-2
               </div>
-              <div className="p-3 bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded text-center text-sm text-gray-600 dark:text-gray-400">
+              <div className="p-3 bg-gray-50 border border-gray-200 rounded text-center text-sm text-gray-600">
                 5
               </div>
-              <div className="p-3 bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded text-center text-sm text-gray-600 dark:text-gray-400">
+              <div className="p-3 bg-gray-50 border border-gray-200 rounded text-center text-sm text-gray-600">
                 6
               </div>
-              <div className="p-3 bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded text-center text-sm text-gray-600 dark:text-gray-400">
+              <div className="p-3 bg-gray-50 border border-gray-200 rounded text-center text-sm text-gray-600">
                 7
               </div>
             </div>
@@ -302,21 +302,21 @@ export function TailwindIntro() {
             </Table.Head>
             <Table.Body>
               <Table.Row>
-                <Table.Cell className="font-medium text-gray-900 dark:text-gray-100">
+                <Table.Cell className="font-medium text-gray-900">
                   Direction
                 </Table.Cell>
                 <Table.Cell>One axis (row or column)</Table.Cell>
                 <Table.Cell>Two axes (rows and columns)</Table.Cell>
               </Table.Row>
               <Table.Row>
-                <Table.Cell className="font-medium text-gray-900 dark:text-gray-100">
+                <Table.Cell className="font-medium text-gray-900">
                   Sizing
                 </Table.Cell>
                 <Table.Cell>Items size themselves</Table.Cell>
                 <Table.Cell>You define the grid, items fill it</Table.Cell>
               </Table.Row>
               <Table.Row>
-                <Table.Cell className="font-medium text-gray-900 dark:text-gray-100">
+                <Table.Cell className="font-medium text-gray-900">
                   Alignment
                 </Table.Cell>
                 <Table.Cell>Great for centering and distributing</Table.Cell>
@@ -325,11 +325,11 @@ export function TailwindIntro() {
             </Table.Body>
           </Table.Root>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
-            <div className="p-3 bg-indigo-50 dark:bg-indigo-950 border border-indigo-200 dark:border-indigo-800 rounded-lg">
-              <p className="font-semibold text-indigo-800 dark:text-indigo-200 mb-1">
+            <div className="p-3 bg-indigo-50 border border-indigo-200 rounded-lg">
+              <p className="font-semibold text-indigo-800 mb-1">
                 Use Flex for:
               </p>
-              <ul className="space-y-0.5 text-indigo-700 dark:text-indigo-300">
+              <ul className="space-y-0.5 text-indigo-700">
                 <li>Navbar items in a row</li>
                 <li>Centering a single element</li>
                 <li>A form with stacked inputs</li>
@@ -337,11 +337,11 @@ export function TailwindIntro() {
                 <li>Anything that flows in one direction</li>
               </ul>
             </div>
-            <div className="p-3 bg-emerald-50 dark:bg-emerald-950 border border-emerald-200 dark:border-emerald-800 rounded-lg">
-              <p className="font-semibold text-emerald-800 dark:text-emerald-200 mb-1">
+            <div className="p-3 bg-emerald-50 border border-emerald-200 rounded-lg">
+              <p className="font-semibold text-emerald-800 mb-1">
                 Use Grid for:
               </p>
-              <ul className="space-y-0.5 text-emerald-700 dark:text-emerald-300">
+              <ul className="space-y-0.5 text-emerald-700">
                 <li>Card grids (products, team members)</li>
                 <li>Dashboard layouts with panels</li>
                 <li>Page layouts (sidebar + content)</li>
@@ -360,7 +360,7 @@ export function TailwindIntro() {
           {["Card A", "Card B", "Card C"].map((label) => (
             <div
               key={label}
-              className="p-4 bg-gray-50 dark:bg-gray-900 rounded-lg border border-gray-200 dark:border-gray-700 text-sm text-center text-gray-700 dark:text-gray-300"
+              className="p-4 bg-gray-50 rounded-lg border border-gray-200 text-sm text-center text-gray-700"
             >
               {label}
             </div>
@@ -373,7 +373,7 @@ export function TailwindIntro() {
 
       <ExampleCard
         title="Dark Mode & Interactive States"
-        description="Prefix modifiers: dark:, hover:, focus-visible:, disabled:."
+        description="Prefix modifiers:, hover:, focus-visible:, disabled:."
       >
         <div className="space-y-4">
           <div className="flex flex-wrap gap-3">
@@ -382,7 +382,7 @@ export function TailwindIntro() {
             </button>
             <button
               disabled
-              className="px-4 py-2 rounded-lg bg-gray-300 dark:bg-gray-700 text-gray-500 text-sm font-medium disabled:opacity-50 disabled:cursor-not-allowed"
+              className="px-4 py-2 rounded-lg bg-gray-300 text-gray-500 text-sm font-medium disabled:opacity-50 disabled:cursor-not-allowed"
             >
               disabled:
             </button>
@@ -393,7 +393,7 @@ export function TailwindIntro() {
   bg-indigo-600 text-white        // base
   hover:bg-indigo-700              // on hover
   focus-visible:ring-2             // keyboard focus
-  dark:bg-indigo-500               // dark mode
+                // dark mode
   disabled:opacity-50              // disabled state
 ">
   Save
@@ -408,36 +408,36 @@ export function TailwindIntro() {
         description="Style child elements when a parent is hovered. Add group to the parent, then use group-hover: on any descendant."
       >
         <div className="space-y-4">
-          <p className="text-sm text-gray-600 dark:text-gray-400">
+          <p className="text-sm text-gray-600">
             Hover over these cards — the title, arrow, and border all react to the parent hover, not
             their own.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {/* Card 1 */}
-            <div className="group rounded-lg border border-gray-200 dark:border-gray-700 p-4 hover:border-indigo-500 dark:hover:border-indigo-400 hover:shadow-md transition-all duration-200 cursor-pointer">
+            <div className="group rounded-lg border border-gray-200 p-4 hover:border-indigo-500:border-indigo-400 hover:shadow-md transition-all duration-200 cursor-pointer">
               <div className="flex items-center justify-between">
-                <h4 className="font-semibold text-gray-900 dark:text-gray-100 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">
+                <h4 className="font-semibold text-gray-900 group-hover:text-indigo-600:text-indigo-400 transition-colors">
                   Dashboard
                 </h4>
                 <span className="text-gray-400 group-hover:text-indigo-500 group-hover:translate-x-1 transition-all duration-200">
                   →
                 </span>
               </div>
-              <p className="text-sm text-gray-500 mt-1 group-hover:text-gray-700 dark:group-hover:text-gray-300 transition-colors">
+              <p className="text-sm text-gray-500 mt-1 group-hover:text-gray-700:text-gray-300 transition-colors">
                 View your analytics and metrics
               </p>
             </div>
             {/* Card 2 */}
-            <div className="group rounded-lg border border-gray-200 dark:border-gray-700 p-4 hover:border-emerald-500 dark:hover:border-emerald-400 hover:shadow-md transition-all duration-200 cursor-pointer">
+            <div className="group rounded-lg border border-gray-200 p-4 hover:border-emerald-500:border-emerald-400 hover:shadow-md transition-all duration-200 cursor-pointer">
               <div className="flex items-center justify-between">
-                <h4 className="font-semibold text-gray-900 dark:text-gray-100 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors">
+                <h4 className="font-semibold text-gray-900 group-hover:text-emerald-600:text-emerald-400 transition-colors">
                   Settings
                 </h4>
                 <span className="text-gray-400 group-hover:text-emerald-500 group-hover:translate-x-1 transition-all duration-200">
                   →
                 </span>
               </div>
-              <p className="text-sm text-gray-500 mt-1 group-hover:text-gray-700 dark:group-hover:text-gray-300 transition-colors">
+              <p className="text-sm text-gray-500 mt-1 group-hover:text-gray-700:text-gray-300 transition-colors">
                 Manage your preferences
               </p>
             </div>
@@ -470,7 +470,7 @@ export function TailwindIntro() {
             </CodeBlock.Frame>
           </CodeBlock.Root>
 
-          <details className="text-sm text-gray-600 dark:text-gray-400">
+          <details className="text-sm text-gray-600">
             <summary className="cursor-pointer text-indigo-600 hover:text-indigo-700">
               How it works
             </summary>

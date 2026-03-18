@@ -25,9 +25,9 @@ export function ServerClientActivity() {
   const totalCorrect = QUIZ_ITEMS.filter((quiz) => quizGuesses[quiz.id] === quiz.answer).length;
 
   return (
-    <div className="max-w-3xl space-y-8">
+    <div className="max-w-6xl space-y-8">
       <div>
-        <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100">
+        <h2 className="text-2xl font-bold text-gray-900">
           Activity: Server or Client?
         </h2>
         <p className="text-gray-500 mt-1">
@@ -49,7 +49,7 @@ export function ServerClientActivity() {
             />
           ))}
           {totalAnswered === QUIZ_ITEMS.length && (
-            <div className="p-3 bg-gray-50 dark:bg-gray-900 rounded text-sm text-gray-700 dark:text-gray-300">
+            <div className="p-3 bg-gray-50 rounded text-sm text-gray-700">
               Score: {totalCorrect}/{QUIZ_ITEMS.length} correct.
               {totalCorrect === QUIZ_ITEMS.length && " Perfect! 🎉"}
             </div>
@@ -57,7 +57,7 @@ export function ServerClientActivity() {
           <button
             type="button"
             onClick={() => setQuizGuesses({})}
-            className="text-xs px-3 py-1.5 rounded bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-700"
+            className="text-xs px-3 py-1.5 rounded bg-gray-100 text-gray-600 hover:bg-gray-200:bg-gray-700"
           >
             Reset quiz
           </button>
@@ -69,7 +69,7 @@ export function ServerClientActivity() {
         description="Click each one to reveal whether it needs the client directive or can stay on the server."
       >
         <div className="space-y-2">
-          <div className="p-3 bg-gray-50 dark:bg-gray-900 rounded text-xs text-gray-500 mb-3">
+          <div className="p-3 bg-gray-50 rounded text-xs text-gray-500 mb-3">
             Imagine a full-width header component. If you put &quot;use client&quot; on the whole
             thing, all 6 parts ship JavaScript to the browser. Your goal: identify which parts
             actually need it.
@@ -87,20 +87,20 @@ export function ServerClientActivity() {
           <button
             type="button"
             onClick={() => setIsolationRevealed(new Set(HEADER_PARTS.map((p) => p.id)))}
-            className="text-xs px-3 py-1.5 rounded bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-700"
+            className="text-xs px-3 py-1.5 rounded bg-gray-100 text-gray-600 hover:bg-gray-200:bg-gray-700"
           >
             Reveal all
           </button>
           <button
             type="button"
             onClick={() => setIsolationRevealed(new Set())}
-            className="text-xs px-3 py-1.5 rounded bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-700"
+            className="text-xs px-3 py-1.5 rounded bg-gray-100 text-gray-600 hover:bg-gray-200:bg-gray-700"
           >
             Reset
           </button>
         </div>
         {isolationRevealed.size === HEADER_PARTS.length && (
-          <div className="mt-4 p-3 bg-emerald-50 dark:bg-emerald-950 border border-emerald-200 dark:border-emerald-800 rounded text-xs text-emerald-800 dark:text-emerald-200 space-y-1">
+          <div className="mt-4 p-3 bg-emerald-50 border border-emerald-200 rounded text-xs text-emerald-800 space-y-1">
             <p className="font-medium">Result:</p>
             <p>
               Only {HEADER_PARTS.filter((part) => part.needsClient).length} out of{" "}

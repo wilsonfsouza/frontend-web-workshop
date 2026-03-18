@@ -4,16 +4,16 @@ import { Table } from "@/components/Table";
 
 export function TypeScript() {
   return (
-    <div className="max-w-3xl space-y-8">
+    <div className="max-w-6xl space-y-8">
       <div>
-        <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100">TypeScript 101</h2>
+        <h2 className="text-2xl font-bold text-gray-900">TypeScript 101</h2>
         <p className="text-gray-500 mt-1">
           TypeScript is JavaScript with types — a safety net that catches mistakes before your code
           runs.
         </p>
       </div>
 
-      <div className="p-4 bg-indigo-50 dark:bg-indigo-950 border border-indigo-200 dark:border-indigo-800 rounded-lg text-sm text-indigo-800 dark:text-indigo-200 space-y-2">
+      <div className="p-4 bg-indigo-50 border border-indigo-200 rounded-lg text-sm text-indigo-800 space-y-2">
         <p>
           TypeScript doesn&apos;t change how your code runs. It&apos;s a development tool — all
           types are stripped away before the code reaches the browser. Think of it like spell-check
@@ -26,8 +26,8 @@ export function TypeScript() {
         description="JavaScript lets bugs slip through to runtime. TypeScript catches them while you type."
       >
         <div className="space-y-3 text-sm">
-          <div className="rounded overflow-hidden border border-red-200 dark:border-red-800">
-            <div className="px-3 py-1.5 bg-red-50 dark:bg-red-950 text-red-700 dark:text-red-300 text-xs">
+          <div className="rounded overflow-hidden border border-red-200">
+            <div className="px-3 py-1.5 bg-red-50 text-red-700 text-xs">
               ❌ JavaScript — crashes at runtime
             </div>
             <CodeBlock.Root>
@@ -38,8 +38,8 @@ export function TypeScript() {
 greet(42); // 💥 name.toUpperCase is not a function`}</CodeBlock.Content>
             </CodeBlock.Root>
           </div>
-          <div className="rounded overflow-hidden border border-emerald-200 dark:border-emerald-800">
-            <div className="px-3 py-1.5 bg-emerald-50 dark:bg-emerald-950 text-emerald-700 dark:text-emerald-300 text-xs">
+          <div className="rounded overflow-hidden border border-emerald-200">
+            <div className="px-3 py-1.5 bg-emerald-50 text-emerald-700 text-xs">
               ✅ TypeScript — caught while writing
             </div>
             <CodeBlock.Root>

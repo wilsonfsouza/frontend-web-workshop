@@ -16,9 +16,9 @@ export function Variables() {
   const [first, second] = colors;
 
   return (
-    <div className="max-w-3xl space-y-8">
+    <div className="max-w-6xl space-y-8">
       <div>
-        <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100">
+        <h2 className="text-2xl font-bold text-gray-900">
           Variables & Data Types
         </h2>
         <p className="text-gray-500 mt-1">
@@ -26,7 +26,7 @@ export function Variables() {
         </p>
       </div>
 
-      <div className="p-4 bg-indigo-50 dark:bg-indigo-950 border border-indigo-200 dark:border-indigo-800 rounded-lg text-sm text-indigo-800 dark:text-indigo-200 space-y-2">
+      <div className="p-4 bg-indigo-50 border border-indigo-200 rounded-lg text-sm text-indigo-800 space-y-2">
         <p>
           JavaScript has three ways to declare variables:{" "}
           <InlineCode variant="accent">const</InlineCode>,{" "}
@@ -42,11 +42,11 @@ export function Variables() {
 
       <ExampleCard title="const vs let" description="const can't be reassigned, let can.">
         <div className="font-mono text-sm space-y-2">
-          <p className="text-gray-600 dark:text-gray-400">
+          <p className="text-gray-600">
             const teamName = "Community Hub" → <span className="text-indigo-600">cannot</span>{" "}
             reassign
           </p>
-          <p className="text-gray-600 dark:text-gray-400">
+          <p className="text-gray-600">
             let score = 0 → score = 10 → <span className="text-emerald-600">allowed</span>
           </p>
         </div>
@@ -96,7 +96,7 @@ export function Variables() {
         description="Unpack values from objects and arrays in a single line. You'll see this everywhere in React."
       >
         <div className="space-y-3 text-sm">
-          <div className="p-3 bg-gray-50 dark:bg-gray-900 rounded font-mono">
+          <div className="p-3 bg-gray-50 rounded font-mono">
             <p className="text-gray-500">// Object destructuring</p>
             <p>const user = {JSON.stringify(user)};</p>
             <p className="mt-1">
@@ -106,7 +106,7 @@ export function Variables() {
               → name: "{name}", role: "{role}"
             </p>
           </div>
-          <div className="p-3 bg-gray-50 dark:bg-gray-900 rounded font-mono">
+          <div className="p-3 bg-gray-50 rounded font-mono">
             <p className="text-gray-500">// Array destructuring</p>
             <p>const colors = {JSON.stringify(colors)};</p>
             <p className="mt-1">const [first, second] = colors;</p>
@@ -114,7 +114,7 @@ export function Variables() {
               → first: "{first}", second: "{second}"
             </p>
           </div>
-          <div className="p-3 bg-gray-50 dark:bg-gray-900 rounded font-mono">
+          <div className="p-3 bg-gray-50 rounded font-mono">
             <p className="text-gray-500">// In React — you'll see both patterns</p>
             <p>const [count, setCount] = useState(0);</p>
             <p className="text-gray-500 mt-1">{"// ↑ array destructuring"}</p>
@@ -129,7 +129,7 @@ export function Variables() {
         description="Copy and merge objects without mutating the original. React uses this pattern heavily."
       >
         <div className="space-y-3">
-          <div className="p-3 bg-gray-50 dark:bg-gray-900 rounded font-mono text-sm">
+          <div className="p-3 bg-gray-50 rounded font-mono text-sm">
             <p className="text-gray-500">// Current object</p>
             <p>{JSON.stringify(spreadDemo)}</p>
           </div>
@@ -142,7 +142,7 @@ export function Variables() {
             </button>
             <button
               onClick={() => setSpreadDemo({ name: "Wilson", role: "engineer" })}
-              className="px-3 py-1.5 text-sm bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded hover:bg-gray-300 transition-colors"
+              className="px-3 py-1.5 text-sm bg-gray-200 text-gray-700 rounded hover:bg-gray-300 transition-colors"
             >
               Reset
             </button>
@@ -159,7 +159,7 @@ export function Variables() {
         description="Copy arrays and add items without modifying the original."
       >
         <div className="space-y-3">
-          <div className="p-3 bg-gray-50 dark:bg-gray-900 rounded font-mono text-sm">
+          <div className="p-3 bg-gray-50 rounded font-mono text-sm">
             <p className="text-gray-500">// Current array</p>
             <p>[{arraySpreadDemo.join(", ")}]</p>
           </div>
@@ -178,7 +178,7 @@ export function Variables() {
             </button>
             <button
               onClick={() => setArraySpreadDemo([1, 2, 3])}
-              className="px-3 py-1.5 text-sm bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded hover:bg-gray-300 transition-colors"
+              className="px-3 py-1.5 text-sm bg-gray-200 text-gray-700 rounded hover:bg-gray-300 transition-colors"
             >
               Reset
             </button>
@@ -194,7 +194,7 @@ export function Variables() {
         title="Template Literals"
         description="Embed expressions inside strings using backticks."
       >
-        <div className="p-3 bg-gray-50 dark:bg-gray-900 rounded font-mono text-sm">
+        <div className="p-3 bg-gray-50 rounded font-mono text-sm">
           <p className="text-gray-500">{"// Using backticks and ${}"}</p>
           <p>const name = "{name}";</p>
           <p className="mt-1">{`\`Hello, \${name}!\``}</p>

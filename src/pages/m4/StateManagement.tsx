@@ -5,9 +5,9 @@ import { Table } from "@/components/Table";
 
 export function StateManagement() {
   return (
-    <div className="max-w-3xl space-y-8">
+    <div className="max-w-6xl space-y-8">
       <div>
-        <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100">
+        <h2 className="text-2xl font-bold text-gray-900">
           State Management Strategies
         </h2>
         <p className="text-gray-500 mt-1">
@@ -16,7 +16,7 @@ export function StateManagement() {
         </p>
       </div>
 
-      <div className="p-4 bg-indigo-50 dark:bg-indigo-950 border border-indigo-200 dark:border-indigo-800 rounded-lg text-sm text-indigo-800 dark:text-indigo-200">
+      <div className="p-4 bg-indigo-50 border border-indigo-200 rounded-lg text-sm text-indigo-800">
         <p>
           Five categories: local, global, HTTP, URL, and server state. Each has a tool that fits.
         </p>
@@ -42,13 +42,13 @@ export function StateManagement() {
 }`}</CodeBlock.Content>
           </CodeBlock.Frame>
         </CodeBlock.Root>
-        <div className="mt-3 p-3 bg-gray-50 dark:bg-gray-900 rounded text-xs text-gray-500 space-y-1">
+        <div className="mt-3 p-3 bg-gray-50 rounded text-xs text-gray-500 space-y-1">
           <p>
-            <span className="font-medium text-gray-900 dark:text-gray-100">When to use:</span> The
+            <span className="font-medium text-gray-900">When to use:</span> The
             state is only relevant to this component (and maybe its direct children via props).
           </p>
           <p>
-            <span className="font-medium text-gray-900 dark:text-gray-100">Common mistake:</span>{" "}
+            <span className="font-medium text-gray-900">Common mistake:</span>{" "}
             Lifting state up &quot;just in case.&quot; If only one component reads and writes the
             value, keep it local. You can always lift it later.
           </p>
@@ -61,10 +61,10 @@ export function StateManagement() {
       >
         <div className="space-y-4">
           <div>
-            <p className="text-xs font-semibold text-gray-900 dark:text-gray-100 mb-2">
+            <p className="text-xs font-semibold text-gray-900 mb-2">
               Context API (built into React)
             </p>
-            <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">
+            <p className="text-sm text-gray-600 mb-2">
               Context lets you pass data through the component tree without prop drilling. It&apos;s
               a delivery mechanism, not a state manager. You pair it with useState or useReducer.
             </p>
@@ -92,7 +92,7 @@ function useAuth() {
 }`}</CodeBlock.Content>
               </CodeBlock.Frame>
             </CodeBlock.Root>
-            <div className="mt-2 p-3 bg-amber-50 dark:bg-amber-950 border border-amber-200 dark:border-amber-800 rounded text-xs text-amber-800 dark:text-amber-200">
+            <div className="mt-2 p-3 bg-amber-50 border border-amber-200 rounded text-xs text-amber-800">
               <span className="font-medium">Re-render caveat:</span> Every component that calls
               useContext re-renders when the context value changes, even if it only uses a small
               piece. Fine for theme/auth that changes rarely. For frequently updating state,
@@ -101,10 +101,10 @@ function useAuth() {
           </div>
 
           <div>
-            <p className="text-xs font-semibold text-gray-900 dark:text-gray-100 mb-2">
+            <p className="text-xs font-semibold text-gray-900 mb-2">
               Zustand (lightweight external store)
             </p>
-            <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">
+            <p className="text-sm text-gray-600 mb-2">
               A small (1 KB), unopinionated state library. No providers, no boilerplate. Components
               subscribe to just the slices they need.
             </p>
@@ -139,21 +139,21 @@ function CartCount() {
             </Table.Head>
             <Table.Body>
               <Table.Row>
-                <Table.Cell className="font-medium text-gray-900 dark:text-gray-100">
+                <Table.Cell className="font-medium text-gray-900">
                   Setup
                 </Table.Cell>
                 <Table.Cell>Built-in, no install</Table.Cell>
                 <Table.Cell>npm install zustand (1 KB)</Table.Cell>
               </Table.Row>
               <Table.Row>
-                <Table.Cell className="font-medium text-gray-900 dark:text-gray-100">
+                <Table.Cell className="font-medium text-gray-900">
                   Re-renders
                 </Table.Cell>
                 <Table.Cell>All consumers on any change</Table.Cell>
                 <Table.Cell>Only when selected slice changes</Table.Cell>
               </Table.Row>
               <Table.Row>
-                <Table.Cell className="font-medium text-gray-900 dark:text-gray-100">
+                <Table.Cell className="font-medium text-gray-900">
                   Best for
                 </Table.Cell>
                 <Table.Cell>Low-frequency values (theme, auth)</Table.Cell>
@@ -170,10 +170,10 @@ function CartCount() {
       >
         <div className="space-y-4">
           <div>
-            <p className="text-xs font-semibold text-gray-900 dark:text-gray-100 mb-2">
+            <p className="text-xs font-semibold text-gray-900 mb-2">
               The useState + useEffect approach
             </p>
-            <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">
+            <p className="text-sm text-gray-600 mb-2">
               Works for simple cases, but you quickly end up re-inventing caching, deduplication,
               and retry logic.
             </p>
@@ -201,7 +201,7 @@ function CartCount() {
             </CodeBlock.Root>
           </div>
           <div>
-            <p className="text-xs font-semibold text-gray-900 dark:text-gray-100 mb-2">
+            <p className="text-xs font-semibold text-gray-900 mb-2">
               The TanStack Query approach
             </p>
             <CodeBlock.Root>
@@ -221,7 +221,7 @@ function UserList() {
 }`}</CodeBlock.Content>
               </CodeBlock.Frame>
             </CodeBlock.Root>
-            <div className="mt-2 p-3 bg-emerald-50 dark:bg-emerald-950 border border-emerald-200 dark:border-emerald-800 rounded text-xs text-emerald-800 dark:text-emerald-200 space-y-1">
+            <div className="mt-2 p-3 bg-emerald-50 border border-emerald-200 rounded text-xs text-emerald-800 space-y-1">
               <p className="font-medium">What you get for free:</p>
               <p>
                 Caching, background refetching, request deduplication, automatic retries, and
@@ -237,13 +237,13 @@ function UserList() {
         description="State that belongs in the address bar. If it should survive a refresh or a shared link, put it in the URL."
       >
         <div className="space-y-4">
-          <p className="text-sm text-gray-600 dark:text-gray-400">
+          <p className="text-sm text-gray-600">
             Imagine an e-commerce page where the user picks a size and color. If those selections
             live in useState, sharing the link loses them. The URL should carry the user&apos;s
             choices: <InlineCode>/products/tee?size=L&amp;color=blue</InlineCode>
           </p>
           <div>
-            <p className="text-xs font-semibold text-gray-900 dark:text-gray-100 mb-2">
+            <p className="text-xs font-semibold text-gray-900 mb-2">
               nuqs: URL state that feels like useState
             </p>
             <CodeBlock.Root>
@@ -266,8 +266,8 @@ function ProductFilters() {
               </CodeBlock.Frame>
             </CodeBlock.Root>
           </div>
-          <div className="p-3 bg-gray-50 dark:bg-gray-900 rounded text-xs text-gray-500">
-            <span className="font-medium text-gray-900 dark:text-gray-100">
+          <div className="p-3 bg-gray-50 rounded text-xs text-gray-500">
+            <span className="font-medium text-gray-900">
               Good candidates for URL state:
             </span>{" "}
             filters, search queries, sorting, pagination, product variants.
@@ -296,7 +296,7 @@ async function UsersPage() {
 }`}</CodeBlock.Content>
             </CodeBlock.Frame>
           </CodeBlock.Root>
-          <p className="text-sm text-gray-600 dark:text-gray-400">
+          <p className="text-sm text-gray-600">
             The data is already there when the HTML arrives. The component never ships its
             JavaScript to the client. When you need interactivity, mark a component with &quot;use
             client&quot; and pass server data as props.
@@ -311,21 +311,21 @@ async function UsersPage() {
             </Table.Head>
             <Table.Body>
               <Table.Row>
-                <Table.Cell className="font-medium text-gray-900 dark:text-gray-100">
+                <Table.Cell className="font-medium text-gray-900">
                   Runs
                 </Table.Cell>
                 <Table.Cell>Client (browser)</Table.Cell>
                 <Table.Cell>Server (at request/build time)</Table.Cell>
               </Table.Row>
               <Table.Row>
-                <Table.Cell className="font-medium text-gray-900 dark:text-gray-100">
+                <Table.Cell className="font-medium text-gray-900">
                   Loading
                 </Table.Cell>
                 <Table.Cell>You manage it</Table.Cell>
                 <Table.Cell>Data is ready on arrival</Table.Cell>
               </Table.Row>
               <Table.Row>
-                <Table.Cell className="font-medium text-gray-900 dark:text-gray-100">
+                <Table.Cell className="font-medium text-gray-900">
                   Best for
                 </Table.Cell>
                 <Table.Cell>Dynamic, user-driven data</Table.Cell>

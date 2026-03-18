@@ -73,9 +73,9 @@ export function Activity() {
   const updated = addMember(team, { name: "Morgan", role: "pm", active: true, projects: 0 });
 
   return (
-    <div className="max-w-3xl space-y-8">
+    <div className="max-w-6xl space-y-8">
       <div>
-        <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100">
+        <h2 className="text-2xl font-bold text-gray-900">
           Activity: Team Dashboard Helper
         </h2>
         <p className="text-gray-500 mt-1">

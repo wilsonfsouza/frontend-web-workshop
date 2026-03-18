@@ -24,7 +24,7 @@ export function TaskList() {
       {tasks.map((task) => (
         <div
           key={task.id}
-          className="flex items-center justify-between p-3 border border-gray-200 dark:border-gray-700 rounded-lg"
+          className="flex items-center justify-between p-3 border border-gray-200 rounded-lg"
         >
           <div className="flex items-center gap-3">
             <button
@@ -35,7 +35,7 @@ export function TaskList() {
               {statusLabels[task.status]}
             </button>
             <span
-              className={`text-sm ${task.status === "done" ? "line-through text-gray-400" : "text-gray-900 dark:text-gray-100"}`}
+              className={`text-sm ${task.status === "done" ? "line-through text-gray-400" : "text-gray-900"}`}
             >
               {task.title}
             </span>
@@ -50,7 +50,7 @@ export function TaskList() {
               </button>
               <button
                 onClick={() => setConfirmDelete(null)}
-                className="px-2 py-1 text-xs bg-gray-200 dark:bg-gray-700 rounded"
+                className="px-2 py-1 text-xs bg-gray-200 rounded"
               >
                 Cancel
               </button>

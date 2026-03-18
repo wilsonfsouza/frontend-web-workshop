@@ -60,15 +60,15 @@ export function UseEffect() {
   }, []);
 
   return (
-    <div className="max-w-3xl space-y-8">
+    <div className="max-w-6xl space-y-8">
       <div>
-        <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100">useEffect</h2>
+        <h2 className="text-2xl font-bold text-gray-900">useEffect</h2>
         <p className="text-gray-500 mt-1">
           Sync with something outside React — APIs, subscriptions, the DOM.
         </p>
       </div>
 
-      <div className="p-4 bg-emerald-50 dark:bg-emerald-950 border border-emerald-200 dark:border-emerald-800 rounded-lg text-sm text-emerald-800 dark:text-emerald-200 space-y-2">
+      <div className="p-4 bg-emerald-50 border border-emerald-200 rounded-lg text-sm text-emerald-800 space-y-2">
         <p>
           useEffect syncs your component with something outside React — APIs, event listeners, the
           DOM. Before reaching for it, ask: "Can I do this during rendering or in an event handler?"
@@ -93,14 +93,14 @@ export function UseEffect() {
           {!state.isLoading && !state.error && (
             <ul className="text-sm space-y-1">
               {state.users.slice(0, 5).map((user) => (
-                <li key={user.id} className="text-gray-700 dark:text-gray-300">
+                <li key={user.id} className="text-gray-700">
                   {user.name} — {user.role} {user.active ? "✅" : "❌"}
                 </li>
               ))}
             </ul>
           )}
 
-          <div className="p-3 bg-amber-50 dark:bg-amber-950 rounded text-sm text-amber-700 dark:text-amber-300">
+          <div className="p-3 bg-amber-50 rounded text-sm text-amber-700">
             Before reaching for useEffect, ask: &quot;Can I do this during rendering or in an event
             handler instead?&quot; If yes, you don&apos;t need useEffect.
           </div>

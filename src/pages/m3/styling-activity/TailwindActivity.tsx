@@ -16,9 +16,9 @@ import { PricingCardAnswer } from "./answers/PricingCardAnswer";
 
 export function TailwindActivity() {
   return (
-    <div className="max-w-3xl space-y-8">
+    <div className="max-w-6xl space-y-8">
       <div>
-        <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100">
+        <h2 className="text-2xl font-bold text-gray-900">
           Activity: Style It Yourself
         </h2>
         <p className="text-gray-500 mt-1">
@@ -30,7 +30,7 @@ export function TailwindActivity() {
       {/* PAIR PROGRAMMING */}
       {/* ============================================================= */}
 
-      <div className="p-4 bg-indigo-50 dark:bg-indigo-950 border border-indigo-200 dark:border-indigo-800 rounded-lg text-sm text-indigo-800 dark:text-indigo-200 space-y-2">
+      <div className="p-4 bg-indigo-50 border border-indigo-200 rounded-lg text-sm text-indigo-800 space-y-2">
         <p className="font-medium">🤝 Exercise 1 — Pair Programming (15 min)</p>
         <p>
           Pair up! One person drives (types), the other navigates (decides which classes to use).
@@ -45,8 +45,8 @@ export function TailwindActivity() {
         <NotificationCardAnswer />
       </ExampleCard>
 
-      <div className="p-4 bg-amber-50 dark:bg-amber-950 border border-amber-200 dark:border-amber-800 rounded-lg">
-        <p className="text-sm text-amber-800 dark:text-amber-200">
+      <div className="p-4 bg-amber-50 border border-amber-200 rounded-lg">
+        <p className="text-sm text-amber-800">
           Open{" "}
           <InlineCode variant="warning">
             src/pages/m3/styling-activity/NotificationCard.tsx
@@ -61,25 +61,25 @@ export function TailwindActivity() {
 
       <ExampleCard title="Step-by-Step Hints" description="Work through these one at a time.">
         <div className="space-y-2">
-          <details className="text-sm text-gray-600 dark:text-gray-400">
+          <details className="text-sm text-gray-600">
             <summary className="cursor-pointer text-indigo-600 hover:text-indigo-700">
               Step 1: Outer container
             </summary>
             <p className="mt-2 pl-4 text-xs">
-              flex items-start gap-3 p-4 rounded-lg border border-gray-200 dark:border-gray-700
-              bg-white dark:bg-gray-900
+              flex items-start gap-3 p-4 rounded-lg border border-gray-200
+              bg-white
             </p>
           </details>
-          <details className="text-sm text-gray-600 dark:text-gray-400">
+          <details className="text-sm text-gray-600">
             <summary className="cursor-pointer text-indigo-600 hover:text-indigo-700">
               Step 2: Icon circle
             </summary>
             <p className="mt-2 pl-4 text-xs">
-              shrink-0 w-10 h-10 rounded-full bg-emerald-100 dark:bg-emerald-900 flex items-center
+              shrink-0 w-10 h-10 rounded-full bg-emerald-100 flex items-center
               justify-center
             </p>
           </details>
-          <details className="text-sm text-gray-600 dark:text-gray-400">
+          <details className="text-sm text-gray-600">
             <summary className="cursor-pointer text-indigo-600 hover:text-indigo-700">
               Step 3: Title row (title + timestamp)
             </summary>
@@ -88,7 +88,7 @@ export function TailwindActivity() {
               text-gray-900 truncate. Time: text-xs text-gray-400 shrink-0.
             </p>
           </details>
-          <details className="text-sm text-gray-600 dark:text-gray-400">
+          <details className="text-sm text-gray-600">
             <summary className="cursor-pointer text-indigo-600 hover:text-indigo-700">
               Step 4: Action buttons
             </summary>
@@ -102,7 +102,7 @@ export function TailwindActivity() {
       </ExampleCard>
 
       <ExampleCard title="Reference Solution" description="Expand when you're done or stuck.">
-        <details className="text-sm text-gray-600 dark:text-gray-400">
+        <details className="text-sm text-gray-600">
           <summary className="cursor-pointer text-indigo-600 hover:text-indigo-700">
             Show solution
           </summary>
@@ -113,45 +113,45 @@ export function TailwindActivity() {
                 <CodeBlock.Content>{`export function NotificationCard() {
   return (
     <div className="flex items-start gap-3 p-4 rounded-lg
-      border border-gray-200 dark:border-gray-700
-      bg-white dark:bg-gray-900
+      border border-gray-200
+      bg-white
       hover:shadow-sm transition-shadow">
 
       <div className="shrink-0 w-10 h-10 rounded-full
-        bg-emerald-100 dark:bg-emerald-900
+        bg-emerald-100
         flex items-center justify-center">
-        <span className="text-emerald-600 dark:text-emerald-400
+        <span className="text-emerald-600
           text-lg" aria-hidden="true">✓</span>
       </div>
 
       <div className="flex-1 min-w-0">
         <div className="flex items-center justify-between gap-2">
           <p className="text-sm font-medium
-            text-gray-900 dark:text-gray-100 truncate">
+            text-gray-900 truncate">
             Deployment successful
           </p>
           <span className="text-xs text-gray-400
-            dark:text-gray-500 shrink-0">
+            shrink-0">
             2m ago
           </span>
         </div>
 
         <p className="text-sm text-gray-500
-          dark:text-gray-400 mt-0.5">
+          mt-0.5">
           Production build v2.4.1 deployed to us-west-2.
         </p>
 
         <div className="flex gap-2 mt-2">
           <button className="px-3 py-1 rounded text-xs
-            font-medium bg-gray-100 dark:bg-gray-800
-            text-gray-700 dark:text-gray-300
-            hover:bg-gray-200 dark:hover:bg-gray-700
+            font-medium bg-gray-100
+            text-gray-700
+            hover:bg-gray-200:bg-gray-700
             transition-colors">
             View logs
           </button>
           <button className="px-3 py-1 rounded text-xs
-            font-medium text-gray-500 dark:text-gray-400
-            hover:text-gray-700 dark:hover:text-gray-200
+            font-medium text-gray-500
+            hover:text-gray-700:text-gray-200
             transition-colors">
             Dismiss
           </button>
@@ -170,7 +170,7 @@ export function TailwindActivity() {
       {/* SOLO CHALLENGE */}
       {/* ============================================================= */}
 
-      <div className="p-4 bg-amber-50 dark:bg-amber-950 border border-amber-200 dark:border-amber-800 rounded-lg text-sm text-amber-800 dark:text-amber-200 space-y-2">
+      <div className="p-4 bg-amber-50 border border-amber-200 rounded-lg text-sm text-amber-800 space-y-2">
         <p className="font-medium">🏆 Exercise 2 — Solo Challenge (10 min)</p>
         <p>
           On your own this time. Build a pricing card from scratch. No step-by-step hints — just the
@@ -187,8 +187,8 @@ export function TailwindActivity() {
         </div>
       </ExampleCard>
 
-      <div className="p-4 bg-amber-50 dark:bg-amber-950 border border-amber-200 dark:border-amber-800 rounded-lg">
-        <p className="text-sm text-amber-800 dark:text-amber-200">
+      <div className="p-4 bg-amber-50 border border-amber-200 rounded-lg">
+        <p className="text-sm text-amber-800">
           Open{" "}
           <InlineCode variant="warning">src/pages/m3/styling-activity/PricingCard.tsx</InlineCode>{" "}
           and add Tailwind classes to match the goal above. Your live preview:
@@ -203,7 +203,7 @@ export function TailwindActivity() {
 
       <ExampleCard title="Hints" description="Only if you're stuck.">
         <div className="space-y-2">
-          <details className="text-sm text-gray-600 dark:text-gray-400">
+          <details className="text-sm text-gray-600">
             <summary className="cursor-pointer text-indigo-600 hover:text-indigo-700">
               How do I position the "Popular" badge?
             </summary>
@@ -212,7 +212,7 @@ export function TailwindActivity() {
               <InlineCode>absolute -top-3 left-4</InlineCode>.
             </p>
           </details>
-          <details className="text-sm text-gray-600 dark:text-gray-400">
+          <details className="text-sm text-gray-600">
             <summary className="cursor-pointer text-indigo-600 hover:text-indigo-700">
               How do I align "$29" and "/month"?
             </summary>
@@ -222,7 +222,7 @@ export function TailwindActivity() {
               <InlineCode>text-sm text-gray-500</InlineCode>.
             </p>
           </details>
-          <details className="text-sm text-gray-600 dark:text-gray-400">
+          <details className="text-sm text-gray-600">
             <summary className="cursor-pointer text-indigo-600 hover:text-indigo-700">
               How do I make the button full width?
             </summary>
@@ -234,7 +234,7 @@ export function TailwindActivity() {
       </ExampleCard>
 
       <ExampleCard title="Reference Solution" description="Expand when you're done.">
-        <details className="text-sm text-gray-600 dark:text-gray-400">
+        <details className="text-sm text-gray-600">
           <summary className="cursor-pointer text-indigo-600 hover:text-indigo-700">
             Show solution
           </summary>
@@ -252,7 +252,7 @@ export function TailwindActivity() {
 
   return (
     <div className="rounded-xl border-2 border-indigo-500
-      bg-white dark:bg-gray-900 p-6 space-y-4 relative">
+      bg-white p-6 space-y-4 relative">
 
       <div className="absolute -top-3 left-4 px-3 py-0.5
         bg-indigo-600 text-white text-xs font-medium
@@ -262,19 +262,19 @@ export function TailwindActivity() {
 
       <div>
         <h3 className="text-lg font-semibold
-          text-gray-900 dark:text-gray-100">Pro</h3>
+          text-gray-900">Pro</h3>
         <p className="text-sm text-gray-500
-          dark:text-gray-400">For growing teams</p>
+         ">For growing teams</p>
       </div>
 
       <div className="flex items-baseline gap-1">
         <span className="text-4xl font-bold
-          text-gray-900 dark:text-gray-100">$29</span>
+          text-gray-900">$29</span>
         <span className="text-sm text-gray-500">/month</span>
       </div>
 
       <ul className="space-y-2 text-sm
-        text-gray-700 dark:text-gray-300">
+        text-gray-700">
         {features.map((feature) => (
           <li key={feature}
             className="flex items-center gap-2">

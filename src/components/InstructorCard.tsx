@@ -1,14 +1,14 @@
 export function InstructorCard() {
   return (
-    <div className="pt-4 border-t border-gray-200 dark:border-gray-700">
-      <p className="text-sm font-medium text-gray-900 dark:text-gray-100">Wilson Franca de Souza</p>
+    <div className="pt-4 border-t border-gray-200">
+      <p className="text-sm font-medium text-gray-900">Wilson Franca de Souza</p>
       <p className="text-xs text-gray-500">Software Engineer</p>
       <div className="flex gap-3 mt-2">
         <a
           href="https://wilsonfranca.dev"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-gray-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
+          className="text-gray-400 hover:text-indigo-600:text-indigo-400 transition-colors"
           aria-label="Personal website"
         >
           <svg
@@ -30,7 +30,7 @@ export function InstructorCard() {
           href="https://www.linkedin.com/in/wilsonfsouza/?locale=en_US"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-gray-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
+          className="text-gray-400 hover:text-indigo-600:text-indigo-400 transition-colors"
           aria-label="LinkedIn profile"
         >
           <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">

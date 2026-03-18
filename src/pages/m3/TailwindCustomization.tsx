@@ -16,9 +16,9 @@ export function TailwindCustomization() {
   const [animKey, setAnimKey] = useState(0);
 
   return (
-    <div className="max-w-3xl space-y-8">
+    <div className="max-w-6xl space-y-8">
       <div>
-        <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100">
+        <h2 className="text-2xl font-bold text-gray-900">
           Customizing Tailwind
         </h2>
         <p className="text-gray-500 mt-1">
@@ -27,7 +27,7 @@ export function TailwindCustomization() {
         </p>
       </div>
 
-      <div className="p-4 bg-indigo-50 dark:bg-indigo-950 border border-indigo-200 dark:border-indigo-800 rounded-lg text-sm text-indigo-800 dark:text-indigo-200 space-y-2">
+      <div className="p-4 bg-indigo-50 border border-indigo-200 rounded-lg text-sm text-indigo-800 space-y-2">
         <p>
           Tailwind v4 uses CSS-native configuration. Instead of a JS config file, you define custom
           values directly in your CSS using <InlineCode variant="accent">@theme</InlineCode> for
@@ -120,11 +120,11 @@ export function TailwindCustomization() {
         description="Register a font family in @theme and use it with the font- utility."
       >
         <div className="space-y-4">
-          <div className="p-4 bg-gray-50 dark:bg-gray-900 rounded-lg space-y-2">
-            <p className="font-display text-xl text-gray-900 dark:text-gray-100">
+          <div className="p-4 bg-gray-50 rounded-lg space-y-2">
+            <p className="font-display text-xl text-gray-900">
               This text uses <InlineCode>font-display</InlineCode> (Georgia, serif)
             </p>
-            <p className="text-sm text-gray-600 dark:text-gray-400">
+            <p className="text-sm text-gray-600">
               And this is the default sans-serif font for comparison.
             </p>
           </div>
@@ -160,31 +160,31 @@ export function TailwindCustomization() {
             Replay animations
           </button>
           <div key={animKey} className="grid grid-cols-2 sm:grid-cols-3 gap-4">
-            <div className="p-4 bg-gray-50 dark:bg-gray-900 rounded-lg text-center animate-fade-in">
+            <div className="p-4 bg-gray-50 rounded-lg text-center animate-fade-in">
               <p className="text-2xl mb-1">👋</p>
               <p className="text-xs font-mono text-gray-500">animate-fade-in</p>
             </div>
-            <div className="p-4 bg-gray-50 dark:bg-gray-900 rounded-lg text-center animate-slide-up">
+            <div className="p-4 bg-gray-50 rounded-lg text-center animate-slide-up">
               <p className="text-2xl mb-1">📦</p>
               <p className="text-xs font-mono text-gray-500">animate-slide-up</p>
             </div>
-            <div className="p-4 bg-gray-50 dark:bg-gray-900 rounded-lg text-center animate-bounce-in">
+            <div className="p-4 bg-gray-50 rounded-lg text-center animate-bounce-in">
               <p className="text-2xl mb-1">🎉</p>
               <p className="text-xs font-mono text-gray-500">animate-bounce-in</p>
             </div>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
-            <div className="p-4 bg-gray-50 dark:bg-gray-900 rounded-lg text-center">
+            <div className="p-4 bg-gray-50 rounded-lg text-center">
               <p className="text-2xl mb-1 animate-pulse-slow">💡</p>
               <p className="text-xs font-mono text-gray-500">animate-pulse-slow</p>
             </div>
-            <div className="p-4 bg-gray-50 dark:bg-gray-900 rounded-lg text-center">
+            <div className="p-4 bg-gray-50 rounded-lg text-center">
               <p className="text-2xl mb-1 animate-spin-slow">⚙️</p>
               <p className="text-xs font-mono text-gray-500">animate-spin-slow</p>
             </div>
             <div
               key={`wiggle-${animKey}`}
-              className="p-4 bg-gray-50 dark:bg-gray-900 rounded-lg text-center"
+              className="p-4 bg-gray-50 rounded-lg text-center"
             >
               <p className="text-2xl mb-1 animate-wiggle">🔔</p>
               <p className="text-xs font-mono text-gray-500">animate-wiggle</p>
@@ -259,7 +259,7 @@ export function TailwindCustomization() {
 }`}</CodeBlock.Content>
             </CodeBlock.Frame>
           </CodeBlock.Root>
-          <div className="p-4 bg-amber-50 dark:bg-amber-950 border border-amber-200 dark:border-amber-800 rounded-lg text-sm text-amber-800 dark:text-amber-200 space-y-2">
+          <div className="p-4 bg-amber-50 border border-amber-200 rounded-lg text-sm text-amber-800 space-y-2">
             <p>
               <InlineCode variant="warning">@layer base</InlineCode> — global defaults (resets,
               focus styles, typography). Applied to all elements.
@@ -282,7 +282,7 @@ export function TailwindCustomization() {
         title="Animation Best Practices"
         description="Keep animations smooth and accessible."
       >
-        <div className="space-y-3 text-sm text-gray-700 dark:text-gray-300">
+        <div className="space-y-3 text-sm text-gray-700">
           <div className="flex items-start gap-3">
             <span className="text-emerald-500 shrink-0" aria-hidden="true">
               ✓

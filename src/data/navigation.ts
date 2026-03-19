@@ -4,9 +4,8 @@ export type NavGroup = { heading: string; items: (NavLinkItem | NavSubGroup)[] }
 export type NavItem = NavLinkItem | NavGroup;
 
 export const navItems: NavItem[] = [
-  { label: "Home", to: "/" },
   {
-    heading: "Module 1 — What This Code Actually Means?",
+    heading: "Module 1: What This Code Actually Means?",
     items: [
       {
         subheading: "JavaScript 101",
@@ -28,7 +27,7 @@ export const navItems: NavItem[] = [
     ],
   },
   {
-    heading: "Module 2 — Reading and Modifying React Apps",
+    heading: "Module 2: Reading and Modifying React Apps",
     items: [
       { label: "Activity: UI Blueprint", to: "/m2/ui-blueprint" },
       { label: "Reading a Component", to: "/m2/reading" },
@@ -54,7 +53,7 @@ export const navItems: NavItem[] = [
     ],
   },
   {
-    heading: "Module 3 — Make It Pretty with Tailwind CSS",
+    heading: "Module 3: Make It Pretty with Tailwind CSS",
     items: [
       { label: "Introduction to Tailwind", to: "/m3/intro" },
       { label: "From Ugly to Pretty", to: "/m3/ugly-to-pretty" },
@@ -69,7 +68,7 @@ export const navItems: NavItem[] = [
     ],
   },
   {
-    heading: "Module 4 — Where does this state belong?",
+    heading: "Module 4: Where does this state belong?",
     items: [
       { label: "Client vs Server", to: "/m4/client-vs-server" },
       { label: "State Management", to: "/m4/state-management" },
@@ -80,7 +79,7 @@ export const navItems: NavItem[] = [
     ],
   },
   {
-    heading: "Module 5 — Reading and modifing Next.js apps",
+    heading: "Module 5: Reading and modifing Next.js apps",
     items: [
       { label: "Introduction to Next.js", to: "/m5/nextjs-intro" },
       { label: "Server vs Client Components", to: "/m5/server-client" },

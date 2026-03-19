@@ -7,9 +7,7 @@ export function StateManagement() {
   return (
     <div className="max-w-6xl space-y-8">
       <div>
-        <h2 className="text-2xl font-bold text-gray-900">
-          State Management Strategies
-        </h2>
+        <h2 className="text-2xl font-bold text-gray-900">State Management Strategies</h2>
         <p className="text-gray-500 mt-1">
           Your app has different kinds of state. The trick is recognizing which kind you&apos;re
           dealing with and picking the simplest approach that works.
@@ -44,13 +42,13 @@ export function StateManagement() {
         </CodeBlock.Root>
         <div className="mt-3 p-3 bg-gray-50 rounded text-xs text-gray-500 space-y-1">
           <p>
-            <span className="font-medium text-gray-900">When to use:</span> The
-            state is only relevant to this component (and maybe its direct children via props).
+            <span className="font-medium text-gray-900">When to use:</span> The state is only
+            relevant to this component (and maybe its direct children via props).
           </p>
           <p>
-            <span className="font-medium text-gray-900">Common mistake:</span>{" "}
-            Lifting state up &quot;just in case.&quot; If only one component reads and writes the
-            value, keep it local. You can always lift it later.
+            <span className="font-medium text-gray-900">Common mistake:</span> Lifting state up
+            &quot;just in case.&quot; If only one component reads and writes the value, keep it
+            local. You can always lift it later.
           </p>
         </div>
       </ExampleCard>
@@ -139,23 +137,17 @@ function CartCount() {
             </Table.Head>
             <Table.Body>
               <Table.Row>
-                <Table.Cell className="font-medium text-gray-900">
-                  Setup
-                </Table.Cell>
+                <Table.Cell className="font-medium text-gray-900">Setup</Table.Cell>
                 <Table.Cell>Built-in, no install</Table.Cell>
                 <Table.Cell>npm install zustand (1 KB)</Table.Cell>
               </Table.Row>
               <Table.Row>
-                <Table.Cell className="font-medium text-gray-900">
-                  Re-renders
-                </Table.Cell>
+                <Table.Cell className="font-medium text-gray-900">Re-renders</Table.Cell>
                 <Table.Cell>All consumers on any change</Table.Cell>
                 <Table.Cell>Only when selected slice changes</Table.Cell>
               </Table.Row>
               <Table.Row>
-                <Table.Cell className="font-medium text-gray-900">
-                  Best for
-                </Table.Cell>
+                <Table.Cell className="font-medium text-gray-900">Best for</Table.Cell>
                 <Table.Cell>Low-frequency values (theme, auth)</Table.Cell>
                 <Table.Cell>Frequently updated state, many consumers</Table.Cell>
               </Table.Row>
@@ -201,9 +193,7 @@ function CartCount() {
             </CodeBlock.Root>
           </div>
           <div>
-            <p className="text-xs font-semibold text-gray-900 mb-2">
-              The TanStack Query approach
-            </p>
+            <p className="text-xs font-semibold text-gray-900 mb-2">The TanStack Query approach</p>
             <CodeBlock.Root>
               <CodeBlock.Frame>
                 <CodeBlock.Title>UserList.tsx (React Query)</CodeBlock.Title>
@@ -267,9 +257,7 @@ function ProductFilters() {
             </CodeBlock.Root>
           </div>
           <div className="p-3 bg-gray-50 rounded text-xs text-gray-500">
-            <span className="font-medium text-gray-900">
-              Good candidates for URL state:
-            </span>{" "}
+            <span className="font-medium text-gray-900">Good candidates for URL state:</span>{" "}
             filters, search queries, sorting, pagination, product variants.
           </div>
         </div>
@@ -311,23 +299,17 @@ async function UsersPage() {
             </Table.Head>
             <Table.Body>
               <Table.Row>
-                <Table.Cell className="font-medium text-gray-900">
-                  Runs
-                </Table.Cell>
+                <Table.Cell className="font-medium text-gray-900">Runs</Table.Cell>
                 <Table.Cell>Client (browser)</Table.Cell>
                 <Table.Cell>Server (at request/build time)</Table.Cell>
               </Table.Row>
               <Table.Row>
-                <Table.Cell className="font-medium text-gray-900">
-                  Loading
-                </Table.Cell>
+                <Table.Cell className="font-medium text-gray-900">Loading</Table.Cell>
                 <Table.Cell>You manage it</Table.Cell>
                 <Table.Cell>Data is ready on arrival</Table.Cell>
               </Table.Row>
               <Table.Row>
-                <Table.Cell className="font-medium text-gray-900">
-                  Best for
-                </Table.Cell>
+                <Table.Cell className="font-medium text-gray-900">Best for</Table.Cell>
                 <Table.Cell>Dynamic, user-driven data</Table.Cell>
                 <Table.Cell>Page content, SEO-critical data</Table.Cell>
               </Table.Row>

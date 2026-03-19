@@ -27,9 +27,7 @@ export function ServerClientActivity() {
   return (
     <div className="max-w-6xl space-y-8">
       <div>
-        <h2 className="text-2xl font-bold text-gray-900">
-          Activity: Server or Client?
-        </h2>
+        <h2 className="text-2xl font-bold text-gray-900">Activity: Server or Client?</h2>
         <p className="text-gray-500 mt-1">
           Two exercises to sharpen your instinct for the server/client boundary.
         </p>
@@ -57,7 +55,7 @@ export function ServerClientActivity() {
           <button
             type="button"
             onClick={() => setQuizGuesses({})}
-            className="text-xs px-3 py-1.5 rounded bg-gray-100 text-gray-600 hover:bg-gray-200:bg-gray-700"
+            className="text-xs px-3 py-1.5 rounded bg-gray-100 text-gray-600 hover:bg-gray-200"
           >
             Reset quiz
           </button>
@@ -87,14 +85,14 @@ export function ServerClientActivity() {
           <button
             type="button"
             onClick={() => setIsolationRevealed(new Set(HEADER_PARTS.map((p) => p.id)))}
-            className="text-xs px-3 py-1.5 rounded bg-gray-100 text-gray-600 hover:bg-gray-200:bg-gray-700"
+            className="text-xs px-3 py-1.5 rounded bg-gray-100 text-gray-600 hover:bg-gray-200"
           >
             Reveal all
           </button>
           <button
             type="button"
             onClick={() => setIsolationRevealed(new Set())}
-            className="text-xs px-3 py-1.5 rounded bg-gray-100 text-gray-600 hover:bg-gray-200:bg-gray-700"
+            className="text-xs px-3 py-1.5 rounded bg-gray-100 text-gray-600 hover:bg-gray-200"
           >
             Reset
           </button>

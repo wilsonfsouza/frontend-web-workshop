@@ -75,9 +75,7 @@ export function Activity() {
   return (
     <div className="max-w-6xl space-y-8">
       <div>
-        <h2 className="text-2xl font-bold text-gray-900">
-          Activity: Team Dashboard Helper
-        </h2>
+        <h2 className="text-2xl font-bold text-gray-900">Activity: Team Dashboard Helper</h2>
         <p className="text-gray-500 mt-1">
           Open <InlineCode>src/pages/m1/Activity.tsx</InlineCode> and fill in the TODO functions.
           The expected results are shown below each step.

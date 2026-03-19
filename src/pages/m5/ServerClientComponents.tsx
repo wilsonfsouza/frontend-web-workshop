@@ -7,9 +7,7 @@ export function ServerClientComponents() {
   return (
     <div className="max-w-6xl space-y-8">
       <div>
-        <h2 className="text-2xl font-bold text-gray-900">
-          Server vs Client Components
-        </h2>
+        <h2 className="text-2xl font-bold text-gray-900">Server vs Client Components</h2>
         <p className="text-gray-500 mt-1">
           Every component is a Server Component by default. Understanding the boundary between
           server and client is the key to writing fast, lean Next.js apps.
@@ -124,44 +122,32 @@ export function SearchInput() {
           </Table.Head>
           <Table.Body>
             <Table.Row>
-              <Table.Cell className="font-medium text-gray-900">
-                Directive
-              </Table.Cell>
+              <Table.Cell className="font-medium text-gray-900">Directive</Table.Cell>
               <Table.Cell>None (default)</Table.Cell>
               <Table.Cell>&quot;use client&quot; at top</Table.Cell>
             </Table.Row>
             <Table.Row>
-              <Table.Cell className="font-medium text-gray-900">
-                async/await
-              </Table.Cell>
+              <Table.Cell className="font-medium text-gray-900">async/await</Table.Cell>
               <Table.Cell>✅</Table.Cell>
               <Table.Cell>❌</Table.Cell>
             </Table.Row>
             <Table.Row>
-              <Table.Cell className="font-medium text-gray-900">
-                Hooks
-              </Table.Cell>
+              <Table.Cell className="font-medium text-gray-900">Hooks</Table.Cell>
               <Table.Cell>❌</Table.Cell>
               <Table.Cell>✅</Table.Cell>
             </Table.Row>
             <Table.Row>
-              <Table.Cell className="font-medium text-gray-900">
-                Event handlers
-              </Table.Cell>
+              <Table.Cell className="font-medium text-gray-900">Event handlers</Table.Cell>
               <Table.Cell>❌</Table.Cell>
               <Table.Cell>✅</Table.Cell>
             </Table.Row>
             <Table.Row>
-              <Table.Cell className="font-medium text-gray-900">
-                Browser APIs
-              </Table.Cell>
+              <Table.Cell className="font-medium text-gray-900">Browser APIs</Table.Cell>
               <Table.Cell>❌</Table.Cell>
               <Table.Cell>✅</Table.Cell>
             </Table.Row>
             <Table.Row>
-              <Table.Cell className="font-medium text-gray-900">
-                JS shipped
-              </Table.Cell>
+              <Table.Cell className="font-medium text-gray-900">JS shipped</Table.Cell>
               <Table.Cell>None</Table.Cell>
               <Table.Cell>Yes</Table.Cell>
             </Table.Row>
@@ -326,9 +312,7 @@ async function Page() {
             </div>
           </div>
           <div className="p-3 bg-gray-50 rounded text-xs text-gray-600 font-mono leading-relaxed">
-            <p className="text-gray-900 font-sans font-medium text-xs mb-1">
-              How it works:
-            </p>
+            <p className="text-gray-900 font-sans font-medium text-xs mb-1">How it works:</p>
             Server Component (Page)
             <br />
             &nbsp;&nbsp;├── renders ServerContent → HTML
@@ -365,35 +349,25 @@ Need a Server Component inside a Client Component?
       <ExampleCard title="Key Takeaways">
         <ul className="space-y-2 text-sm text-gray-600">
           <li>
-            <span className="font-medium text-gray-900">
-              Server Components are the default
-            </span>{" "}
-            in Next.js App Router. You don&apos;t need to do anything special.
+            <span className="font-medium text-gray-900">Server Components are the default</span> in
+            Next.js App Router. You don&apos;t need to do anything special.
           </li>
           <li>
-            <span className="font-medium text-gray-900">
-              Client Components are opt-in.
-            </span>{" "}
-            Add &quot;use client&quot; only when you need interactivity.
+            <span className="font-medium text-gray-900">Client Components are opt-in.</span> Add
+            &quot;use client&quot; only when you need interactivity.
           </li>
           <li>
-            <span className="font-medium text-gray-900">
-              Isolate interactivity.
-            </span>{" "}
-            Extract the smallest possible Client Component to minimize JavaScript.
+            <span className="font-medium text-gray-900">Isolate interactivity.</span> Extract the
+            smallest possible Client Component to minimize JavaScript.
           </li>
           <li>
-            <span className="font-medium text-gray-900">
-              Use the children pattern.
-            </span>{" "}
-            Server Components can live inside Client Components when passed as children.
+            <span className="font-medium text-gray-900">Use the children pattern.</span> Server
+            Components can live inside Client Components when passed as children.
           </li>
           <li>
-            <span className="font-medium text-gray-900">
-              Think in boundaries.
-            </span>{" "}
-            Every &quot;use client&quot; directive creates a boundary. Everything imported below it
-            becomes client code.
+            <span className="font-medium text-gray-900">Think in boundaries.</span> Every &quot;use
+            client&quot; directive creates a boundary. Everything imported below it becomes client
+            code.
           </li>
         </ul>
       </ExampleCard>

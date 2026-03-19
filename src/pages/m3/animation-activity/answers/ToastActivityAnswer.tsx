@@ -8,11 +8,9 @@ export function ToastActivityAnswer() {
       </div>
       <div className="flex-1 min-w-0">
         <p className="text-sm font-medium text-emerald-900">Changes saved</p>
-        <p className="text-xs text-emerald-600">
-          Your settings have been updated successfully.
-        </p>
+        <p className="text-xs text-emerald-600">Your settings have been updated successfully.</p>
       </div>
-      <button className="shrink-0 px-3 py-1 rounded text-xs font-medium text-emerald-700 hover:bg-emerald-100:bg-emerald-900 transition-colors">
+      <button className="shrink-0 px-3 py-1 rounded text-xs font-medium text-emerald-700 hover:bg-emerald-100 transition-colors">
         Dismiss
       </button>
     </div>

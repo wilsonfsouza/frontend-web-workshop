@@ -46,10 +46,7 @@ TableHeaderRow.displayname = "TableHeaderRow";
 
 function TableHeader({ className = "", children, ...props }: ComponentProps<"th">) {
   return (
-    <th
-      className={`py-2 pr-3 font-medium text-gray-900 ${className}`}
-      {...props}
-    >
+    <th className={`py-2 pr-3 font-medium text-gray-900 ${className}`} {...props}>
       {children}
     </th>
   );
@@ -59,10 +56,7 @@ TableHeader.displayname = "TableHeader";
 
 function TableRow({ className = "", children, ...props }: ComponentProps<"tr">) {
   return (
-    <tr
-      className={`border-b border-gray-100 last:border-0 ${className}`}
-      {...props}
-    >
+    <tr className={`border-b border-gray-100 last:border-0 ${className}`} {...props}>
       {children}
     </tr>
   );

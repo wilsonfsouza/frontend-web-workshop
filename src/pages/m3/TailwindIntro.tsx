@@ -7,9 +7,7 @@ export function TailwindIntro() {
   return (
     <div className="max-w-6xl space-y-8">
       <div>
-        <h2 className="text-2xl font-bold text-gray-900">
-          Introduction to Tailwind CSS
-        </h2>
+        <h2 className="text-2xl font-bold text-gray-900">Introduction to Tailwind CSS</h2>
         <p className="text-gray-500 mt-1">
           What utility-first CSS means and how to read Tailwind classes in React code.
         </p>
@@ -302,23 +300,17 @@ export function TailwindIntro() {
             </Table.Head>
             <Table.Body>
               <Table.Row>
-                <Table.Cell className="font-medium text-gray-900">
-                  Direction
-                </Table.Cell>
+                <Table.Cell className="font-medium text-gray-900">Direction</Table.Cell>
                 <Table.Cell>One axis (row or column)</Table.Cell>
                 <Table.Cell>Two axes (rows and columns)</Table.Cell>
               </Table.Row>
               <Table.Row>
-                <Table.Cell className="font-medium text-gray-900">
-                  Sizing
-                </Table.Cell>
+                <Table.Cell className="font-medium text-gray-900">Sizing</Table.Cell>
                 <Table.Cell>Items size themselves</Table.Cell>
                 <Table.Cell>You define the grid, items fill it</Table.Cell>
               </Table.Row>
               <Table.Row>
-                <Table.Cell className="font-medium text-gray-900">
-                  Alignment
-                </Table.Cell>
+                <Table.Cell className="font-medium text-gray-900">Alignment</Table.Cell>
                 <Table.Cell>Great for centering and distributing</Table.Cell>
                 <Table.Cell>Great for precise placement</Table.Cell>
               </Table.Row>
@@ -326,9 +318,7 @@ export function TailwindIntro() {
           </Table.Root>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
             <div className="p-3 bg-indigo-50 border border-indigo-200 rounded-lg">
-              <p className="font-semibold text-indigo-800 mb-1">
-                Use Flex for:
-              </p>
+              <p className="font-semibold text-indigo-800 mb-1">Use Flex for:</p>
               <ul className="space-y-0.5 text-indigo-700">
                 <li>Navbar items in a row</li>
                 <li>Centering a single element</li>
@@ -338,9 +328,7 @@ export function TailwindIntro() {
               </ul>
             </div>
             <div className="p-3 bg-emerald-50 border border-emerald-200 rounded-lg">
-              <p className="font-semibold text-emerald-800 mb-1">
-                Use Grid for:
-              </p>
+              <p className="font-semibold text-emerald-800 mb-1">Use Grid for:</p>
               <ul className="space-y-0.5 text-emerald-700">
                 <li>Card grids (products, team members)</li>
                 <li>Dashboard layouts with panels</li>
@@ -414,30 +402,30 @@ export function TailwindIntro() {
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {/* Card 1 */}
-            <div className="group rounded-lg border border-gray-200 p-4 hover:border-indigo-500:border-indigo-400 hover:shadow-md transition-all duration-200 cursor-pointer">
+            <div className="group rounded-lg border border-gray-200 p-4 hover:border-indigo-500 hover:shadow-md transition-all duration-200 cursor-pointer">
               <div className="flex items-center justify-between">
-                <h4 className="font-semibold text-gray-900 group-hover:text-indigo-600:text-indigo-400 transition-colors">
+                <h4 className="font-semibold text-gray-900 group-hover:text-indigo-600 transition-colors">
                   Dashboard
                 </h4>
                 <span className="text-gray-400 group-hover:text-indigo-500 group-hover:translate-x-1 transition-all duration-200">
                   →
                 </span>
               </div>
-              <p className="text-sm text-gray-500 mt-1 group-hover:text-gray-700:text-gray-300 transition-colors">
+              <p className="text-sm text-gray-500 mt-1 group-hover:text-gray-700 transition-colors">
                 View your analytics and metrics
               </p>
             </div>
             {/* Card 2 */}
-            <div className="group rounded-lg border border-gray-200 p-4 hover:border-emerald-500:border-emerald-400 hover:shadow-md transition-all duration-200 cursor-pointer">
+            <div className="group rounded-lg border border-gray-200 p-4 hover:border-emerald-500 hover:shadow-md transition-all duration-200 cursor-pointer">
               <div className="flex items-center justify-between">
-                <h4 className="font-semibold text-gray-900 group-hover:text-emerald-600:text-emerald-400 transition-colors">
+                <h4 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors">
                   Settings
                 </h4>
                 <span className="text-gray-400 group-hover:text-emerald-500 group-hover:translate-x-1 transition-all duration-200">
                   →
                 </span>
               </div>
-              <p className="text-sm text-gray-500 mt-1 group-hover:text-gray-700:text-gray-300 transition-colors">
+              <p className="text-sm text-gray-500 mt-1 group-hover:text-gray-700 transition-colors">
                 Manage your preferences
               </p>
             </div>

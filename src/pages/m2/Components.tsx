@@ -181,9 +181,7 @@ function Card({ title, children }: CardProps) {
             </h4>
             <div className="grid gap-3 sm:grid-cols-2">
               <div className="border border-gray-200 rounded-lg p-3">
-                <p className="text-xs font-medium text-gray-900 mb-1">
-                  Group by type
-                </p>
+                <p className="text-xs font-medium text-gray-900 mb-1">Group by type</p>
                 <p className="text-xs text-gray-500 mb-2">
                   Separate folders for components, hooks, and utilities. Simple and familiar. Works
                   well for smaller projects but can get noisy as the app grows.
@@ -202,9 +200,7 @@ function Card({ title, children }: CardProps) {
                 </CodeBlock.Root>
               </div>
               <div className="border border-gray-200 rounded-lg p-3">
-                <p className="text-xs font-medium text-gray-900 mb-1">
-                  Group by feature
-                </p>
+                <p className="text-xs font-medium text-gray-900 mb-1">Group by feature</p>
                 <p className="text-xs text-gray-500 mb-2">
                   Everything related to a feature lives together. Each folder is self-contained.
                   Shared components still live in a top-level components/ folder.

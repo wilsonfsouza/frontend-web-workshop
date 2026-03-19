@@ -89,9 +89,7 @@ counter.getCount(); // 2`}</CodeBlock.Content>
       >
         <div className="space-y-3">
           <div className="rounded overflow-hidden border border-gray-200">
-            <div className="px-3 py-1.5 bg-gray-100 text-xs text-gray-500">
-              utils.ts
-            </div>
+            <div className="px-3 py-1.5 bg-gray-100 text-xs text-gray-500">utils.ts</div>
             <CodeBlock.Root>
               <CodeBlock.Content variant="light">{`const API_URL = "https://api.example.com"; // private to this file
 
@@ -101,9 +99,7 @@ export function fetchUsers() {
             </CodeBlock.Root>
           </div>
           <div className="rounded overflow-hidden border border-gray-200">
-            <div className="px-3 py-1.5 bg-gray-100 text-xs text-gray-500">
-              app.ts
-            </div>
+            <div className="px-3 py-1.5 bg-gray-100 text-xs text-gray-500">app.ts</div>
             <CodeBlock.Root>
               <CodeBlock.Content variant="light">{`import { fetchUsers } from "./utils";
 

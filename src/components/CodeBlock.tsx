@@ -20,10 +20,7 @@ interface CodeBlockFrameProps extends ComponentProps<"div"> {
 
 function CodeBlockFrame({ children, className = "", ...rest }: CodeBlockFrameProps) {
   return (
-    <div
-      className={`rounded-lg border border-gray-200 overflow-hidden ${className}`}
-      {...rest}
-    >
+    <div className={`rounded-lg border border-gray-200 overflow-hidden ${className}`} {...rest}>
       {children}
     </div>
   );

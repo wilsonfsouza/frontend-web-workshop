@@ -11,7 +11,7 @@ export const initialTasks: Task[] = [
 ];
 
 export const statusColors = {
-  todo: "bg-gray-100 text-gray-700",
+  todo: "bg-gray-50 text-gray-700",
   "in-progress": "bg-amber-100 text-amber-700",
   done: "bg-emerald-100 text-emerald-700",
 };

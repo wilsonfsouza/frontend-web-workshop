@@ -1,9 +1,7 @@
 export function Home() {
   return (
     <div className="max-w-6xl space-y-6">
-      <h2 className="text-3xl font-bold text-gray-900">
-        Web Application Development Workshop
-      </h2>
+      <h2 className="text-3xl font-bold text-gray-900">Web Application Development Workshop</h2>
       <p className="text-gray-600 leading-relaxed">
         Welcome! This app is your interactive slide deck for the training series. Each page is a
         self-contained demo you can walk through during the presentation or explore on your own.
@@ -41,9 +39,7 @@ export function Home() {
         </div>
 
         <div className="p-4 rounded-lg bg-amber-50 border border-amber-200">
-          <h3 className="font-semibold text-amber-900">
-            Module 4 — Where does this state belong?
-          </h3>
+          <h3 className="font-semibold text-amber-900">Module 4 — Where does this state belong?</h3>
           <p className="text-sm text-amber-700 mt-1">
             Evolution of the web (traditional, SPA, SSR), state management strategies (local,
             global, HTTP, URL, server), and a State Management Decisions activity.

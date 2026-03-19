@@ -18,9 +18,7 @@ export function TailwindCustomization() {
   return (
     <div className="max-w-6xl space-y-8">
       <div>
-        <h2 className="text-2xl font-bold text-gray-900">
-          Customizing Tailwind
-        </h2>
+        <h2 className="text-2xl font-bold text-gray-900">Customizing Tailwind</h2>
         <p className="text-gray-500 mt-1">
           Extend colors, fonts, and animations using <InlineCode>@theme</InlineCode> and{" "}
           <InlineCode>@layer</InlineCode>.
@@ -182,10 +180,7 @@ export function TailwindCustomization() {
               <p className="text-2xl mb-1 animate-spin-slow">⚙️</p>
               <p className="text-xs font-mono text-gray-500">animate-spin-slow</p>
             </div>
-            <div
-              key={`wiggle-${animKey}`}
-              className="p-4 bg-gray-50 rounded-lg text-center"
-            >
+            <div key={`wiggle-${animKey}`} className="p-4 bg-gray-50 rounded-lg text-center">
               <p className="text-2xl mb-1 animate-wiggle">🔔</p>
               <p className="text-xs font-mono text-gray-500">animate-wiggle</p>
             </div>

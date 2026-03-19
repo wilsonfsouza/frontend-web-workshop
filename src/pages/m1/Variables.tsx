@@ -96,7 +96,7 @@ export function Variables() {
         description="Unpack values from objects and arrays in a single line. You'll see this everywhere in React."
       >
         <div className="space-y-3 text-sm">
-          <div className="p-3 bg-gray-50 rounded font-mono">
+          <div className="p-3 bg-gray-50 rounded font-mono overflow-x-auto">
             <p className="text-gray-500">// Object destructuring</p>
             <p>const user = {JSON.stringify(user)};</p>
             <p className="mt-1">
@@ -129,7 +129,7 @@ export function Variables() {
         description="Copy and merge objects without mutating the original. React uses this pattern heavily."
       >
         <div className="space-y-3">
-          <div className="p-3 bg-gray-50 rounded font-mono text-sm">
+          <div className="p-3 bg-gray-50 rounded font-mono text-sm overflow-x-auto">
             <p className="text-gray-500">// Current object</p>
             <p>{JSON.stringify(spreadDemo)}</p>
           </div>

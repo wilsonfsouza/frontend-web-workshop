@@ -31,7 +31,7 @@ export function QuizCard({ item, guess, onGuess }: QuizCardProps) {
               ? "bg-emerald-100 text-emerald-800 ring-2 ring-emerald-500"
               : answered && guess === "server" && item.answer !== "server"
                 ? "bg-red-100 text-red-800 ring-2 ring-red-500"
-                : "bg-indigo-50 text-indigo-700 hover:bg-indigo-100:bg-indigo-900"
+                : "bg-indigo-50 text-indigo-700 hover:bg-indigo-100"
           } disabled:cursor-default`}
         >
           🖥️ Server
@@ -45,7 +45,7 @@ export function QuizCard({ item, guess, onGuess }: QuizCardProps) {
               ? "bg-emerald-100 text-emerald-800 ring-2 ring-emerald-500"
               : answered && guess === "client" && item.answer !== "client"
                 ? "bg-red-100 text-red-800 ring-2 ring-red-500"
-                : "bg-amber-50 text-amber-700 hover:bg-amber-100:bg-amber-900"
+                : "bg-amber-50 text-amber-700 hover:bg-amber-100"
           } disabled:cursor-default`}
         >
           💻 Client

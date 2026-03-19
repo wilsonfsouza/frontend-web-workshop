@@ -57,7 +57,7 @@ export function ServerClientActivity() {
           <button
             type="button"
             onClick={() => setQuizGuesses({})}
-            className="text-xs px-3 py-1.5 rounded bg-gray-100 text-gray-600 hover:bg-gray-200:bg-gray-700"
+            className="text-xs px-3 py-1.5 rounded bg-gray-100 text-gray-600 hover:bg-gray-200"
           >
             Reset quiz
           </button>
@@ -87,14 +87,14 @@ export function ServerClientActivity() {
           <button
             type="button"
             onClick={() => setIsolationRevealed(new Set(HEADER_PARTS.map((p) => p.id)))}
-            className="text-xs px-3 py-1.5 rounded bg-gray-100 text-gray-600 hover:bg-gray-200:bg-gray-700"
+            className="text-xs px-3 py-1.5 rounded bg-gray-100 text-gray-600 hover:bg-gray-200"
           >
             Reveal all
           </button>
           <button
             type="button"
             onClick={() => setIsolationRevealed(new Set())}
-            className="text-xs px-3 py-1.5 rounded bg-gray-100 text-gray-600 hover:bg-gray-200:bg-gray-700"
+            className="text-xs px-3 py-1.5 rounded bg-gray-100 text-gray-600 hover:bg-gray-200"
           >
             Reset
           </button>

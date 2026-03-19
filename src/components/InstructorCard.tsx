@@ -8,7 +8,7 @@ export function InstructorCard() {
           href="https://wilsonfranca.dev"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-gray-400 hover:text-indigo-600:text-indigo-400 transition-colors"
+          className="text-gray-400 hover:text-indigo-600 transition-colors"
           aria-label="Personal website"
         >
           <svg
@@ -30,7 +30,7 @@ export function InstructorCard() {
           href="https://www.linkedin.com/in/wilsonfsouza/?locale=en_US"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-gray-400 hover:text-indigo-600:text-indigo-400 transition-colors"
+          className="text-gray-400 hover:text-indigo-600 transition-colors"
           aria-label="LinkedIn profile"
         >
           <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">

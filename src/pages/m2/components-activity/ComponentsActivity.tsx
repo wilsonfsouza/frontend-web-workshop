@@ -58,7 +58,7 @@ export function ComponentsActivity() {
                 key={zone.id}
                 type="button"
                 onClick={() => toggle(zone.id)}
-                className="w-full text-left p-3 rounded-lg border border-gray-200 hover:border-gray-400:border-gray-500 transition-colors"
+                className="w-full text-left p-3 rounded-lg border border-gray-200 hover:border-gray-400 transition-colors"
               >
                 <div className="flex items-center gap-2">
                   <span
@@ -82,14 +82,14 @@ export function ComponentsActivity() {
           <button
             type="button"
             onClick={() => setRevealed(new Set(ZONES.map((z) => z.id)))}
-            className="text-xs px-3 py-1.5 rounded bg-gray-100 text-gray-600 hover:bg-gray-200:bg-gray-700"
+            className="text-xs px-3 py-1.5 rounded bg-gray-100 text-gray-600 hover:bg-gray-200"
           >
             Reveal all
           </button>
           <button
             type="button"
             onClick={() => setRevealed(new Set())}
-            className="text-xs px-3 py-1.5 rounded bg-gray-100 text-gray-600 hover:bg-gray-200:bg-gray-700"
+            className="text-xs px-3 py-1.5 rounded bg-gray-50 text-gray-600 hover:bg-gray-200"
           >
             Reset
           </button>

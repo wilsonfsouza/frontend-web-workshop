@@ -93,7 +93,7 @@ export function TailwindActivity() {
               Step 4: Action buttons
             </summary>
             <p className="mt-2 pl-4 text-xs">
-              Container: flex gap-2 mt-2. Primary: px-3 py-1 rounded text-xs font-medium bg-gray-100
+              Container: flex gap-2 mt-2. Primary: px-3 py-1 rounded text-xs font-medium bg-gray-50
               text-gray-700 hover:bg-gray-200. Secondary: same but no background, just text color +
               hover.
             </p>
@@ -143,15 +143,15 @@ export function TailwindActivity() {
 
         <div className="flex gap-2 mt-2">
           <button className="px-3 py-1 rounded text-xs
-            font-medium bg-gray-100
+            font-medium bg-gray-50
             text-gray-700
-            hover:bg-gray-200:bg-gray-700
+            hover:bg-gray-200
             transition-colors">
             View logs
           </button>
           <button className="px-3 py-1 rounded text-xs
             font-medium text-gray-500
-            hover:text-gray-700:text-gray-200
+            hover:text-gray-700
             transition-colors">
             Dismiss
           </button>

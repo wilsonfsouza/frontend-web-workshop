@@ -11,7 +11,7 @@ export function IsolationCard({ part, revealed, onReveal }: IsolationCardProps) 
     <button
       type="button"
       onClick={onReveal}
-      className="w-full text-left border border-gray-200 rounded-lg p-3 hover:border-gray-400:border-gray-500 transition-colors space-y-2"
+      className="w-full text-left border border-gray-200 rounded-lg p-3 hover:border-gray-400 transition-colors space-y-2"
     >
       <div className="flex items-center justify-between">
         <span className="text-sm font-medium text-gray-900">{part.label}</span>

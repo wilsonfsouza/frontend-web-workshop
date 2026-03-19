@@ -61,14 +61,14 @@ export function StateActivity() {
         <button
           type="button"
           onClick={() => setRevealed(new Set(SCENARIOS.map((s) => s.id)))}
-          className="text-xs px-3 py-1.5 rounded bg-gray-100 text-gray-600 hover:bg-gray-200:bg-gray-700"
+          className="text-xs px-3 py-1.5 rounded bg-gray-100 text-gray-600 hover:bg-gray-200"
         >
           Reveal all answers
         </button>
         <button
           type="button"
           onClick={() => setRevealed(new Set())}
-          className="text-xs px-3 py-1.5 rounded bg-gray-100 text-gray-600 hover:bg-gray-200:bg-gray-700"
+          className="text-xs px-3 py-1.5 rounded bg-gray-100 text-gray-600 hover:bg-gray-200"
         >
           Reset
         </button>

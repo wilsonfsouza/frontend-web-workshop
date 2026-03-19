@@ -10,7 +10,7 @@ const getLinkClassName = ({ isActive }: GetLinkClassName) =>
   `block px-3 py-1.5 rounded text-sm ${
     isActive
       ? "bg-indigo-100 text-indigo-800 font-medium"
-      : "text-gray-600 hover:bg-gray-100:bg-gray-800"
+      : "text-gray-600 hover:bg-gray-100"
   }`;
 
 interface NavLinkEntryProps {
@@ -30,12 +30,13 @@ NavLinkEntry.displayname = "NavLinkEntry";
 
 interface NavSubGroupEntryProps {
   group: NavSubGroup;
+  isFirst?: boolean;
 }
 
-function NavSubGroupEntry({ group }: NavSubGroupEntryProps) {
+function NavSubGroupEntry({ group, isFirst }: NavSubGroupEntryProps) {
   return (
-    <div className="mt-2">
-      <p className="px-3 mb-0.5 text-[11px] font-medium text-gray-400">
+    <div className={isFirst ? "mt-1" : "mt-3"}>
+      <p className="px-3 mb-1 text-xs font-semibold text-gray-500 border-l-2 border-indigo-200 ml-2">
         {group.subheading}
       </p>
       <div className="flex flex-col gap-0.5">
@@ -69,7 +70,7 @@ function NavGroupEntry({ group, index, isOpen, onToggle }: NavGroupEntryProps) {
         id={headingId}
         onClick={onToggle}
         aria-expanded={isOpen}
-        className="w-full flex items-center justify-between px-3 py-2 text-xs font-semibold uppercase tracking-wider text-gray-400 hover:text-gray-600:text-gray-100 cursor-pointer rounded transition-colors"
+        className="w-full flex items-center justify-between px-3 py-2 text-xs font-semibold uppercase tracking-wider text-indigo-600 hover:text-indigo-800 cursor-pointer rounded transition-colors"
       >
         <span className="text-left">{group.heading}</span>
         <svg
@@ -89,7 +90,7 @@ function NavGroupEntry({ group, index, isOpen, onToggle }: NavGroupEntryProps) {
             "to" in child ? (
               <NavLinkEntry key={child.to} item={child} />
             ) : (
-              <NavSubGroupEntry key={`${index}-${childIndex}`} group={child} />
+              <NavSubGroupEntry key={`${index}-${childIndex}`} group={child} isFirst={childIndex === 0} />
             ),
           )}
         </div>
@@ -101,21 +102,19 @@ function NavGroupEntry({ group, index, isOpen, onToggle }: NavGroupEntryProps) {
 NavGroupEntry.displayname = "NavGroupEntry";
 
 export function Navigation({ openModules, toggle }: NavModulesState) {
-  let groupIdx = 0;
   return (
     <>
       {navItems.map((item, index) => {
         if ("to" in item) {
           return <NavLinkEntry key={item.to} item={item} isExactMatch />;
         }
-        const currentGroupIdx = groupIdx++;
         return (
           <NavGroupEntry
             key={index}
             group={item}
             index={index}
-            isOpen={openModules.has(currentGroupIdx)}
-            onToggle={() => toggle(currentGroupIdx)}
+            isOpen={openModules.has(index)}
+            onToggle={() => toggle(index)}
           />
         );
       })}

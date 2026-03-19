@@ -414,30 +414,30 @@ export function TailwindIntro() {
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {/* Card 1 */}
-            <div className="group rounded-lg border border-gray-200 p-4 hover:border-indigo-500:border-indigo-400 hover:shadow-md transition-all duration-200 cursor-pointer">
+            <div className="group rounded-lg border border-gray-200 p-4 hover:border-indigo-500 hover:shadow-md transition-all duration-200 cursor-pointer">
               <div className="flex items-center justify-between">
-                <h4 className="font-semibold text-gray-900 group-hover:text-indigo-600:text-indigo-400 transition-colors">
+                <h4 className="font-semibold text-gray-900 group-hover:text-indigo-600 transition-colors">
                   Dashboard
                 </h4>
                 <span className="text-gray-400 group-hover:text-indigo-500 group-hover:translate-x-1 transition-all duration-200">
                   →
                 </span>
               </div>
-              <p className="text-sm text-gray-500 mt-1 group-hover:text-gray-700:text-gray-300 transition-colors">
+              <p className="text-sm text-gray-500 mt-1 group-hover:text-gray-700 transition-colors">
                 View your analytics and metrics
               </p>
             </div>
             {/* Card 2 */}
-            <div className="group rounded-lg border border-gray-200 p-4 hover:border-emerald-500:border-emerald-400 hover:shadow-md transition-all duration-200 cursor-pointer">
+            <div className="group rounded-lg border border-gray-200 p-4 hover:border-emerald-500 hover:shadow-md transition-all duration-200 cursor-pointer">
               <div className="flex items-center justify-between">
-                <h4 className="font-semibold text-gray-900 group-hover:text-emerald-600:text-emerald-400 transition-colors">
+                <h4 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors">
                   Settings
                 </h4>
                 <span className="text-gray-400 group-hover:text-emerald-500 group-hover:translate-x-1 transition-all duration-200">
                   →
                 </span>
               </div>
-              <p className="text-sm text-gray-500 mt-1 group-hover:text-gray-700:text-gray-300 transition-colors">
+              <p className="text-sm text-gray-500 mt-1 group-hover:text-gray-700 transition-colors">
                 Manage your preferences
               </p>
             </div>

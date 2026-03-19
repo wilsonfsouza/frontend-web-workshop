@@ -12,7 +12,7 @@ export function ToastActivityAnswer() {
           Your settings have been updated successfully.
         </p>
       </div>
-      <button className="shrink-0 px-3 py-1 rounded text-xs font-medium text-emerald-700 hover:bg-emerald-100:bg-emerald-900 transition-colors">
+      <button className="shrink-0 px-3 py-1 rounded text-xs font-medium text-emerald-700 hover:bg-emerald-100 transition-colors">
         Dismiss
       </button>
     </div>

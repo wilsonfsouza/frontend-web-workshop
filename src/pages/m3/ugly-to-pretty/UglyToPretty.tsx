@@ -43,7 +43,7 @@ export function UglyToPretty() {
               className={`px-3 py-1.5 rounded text-xs font-medium transition-colors ${
                 currentStep === step.id
                   ? "bg-indigo-600 text-white"
-                  : "bg-gray-100 text-gray-600 hover:bg-gray-200:bg-gray-700"
+                  : "bg-gray-50 text-gray-600 hover:bg-gray-200"
               }`}
             >
               {step.id}
@@ -56,7 +56,7 @@ export function UglyToPretty() {
         <button
           onClick={() => setCurrentStep((currentStep) => Math.max(0, currentStep - 1))}
           disabled={currentStep === 0}
-          className="px-4 py-2 rounded-lg border border-gray-300 text-gray-700 text-sm font-medium hover:bg-gray-50:bg-gray-800 disabled:opacity-40 disabled:cursor-not-allowed transition-colors"
+          className="px-4 py-2 rounded-lg border border-gray-300 text-gray-700 text-sm font-medium hover:bg-gray-50 disabled:opacity-40 disabled:cursor-not-allowed transition-colors"
         >
           ← Previous
         </button>
@@ -85,7 +85,7 @@ export function UglyToPretty() {
           </div>
         )}
 
-        <div className="p-4 bg-gray-100 rounded-lg">
+        <div className="p-4 bg-gray-50 rounded-lg">
           <ProfileCard step={step} />
         </div>
       </ExampleCard>

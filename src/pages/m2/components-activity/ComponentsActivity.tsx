@@ -18,9 +18,7 @@ export function ComponentsActivity() {
   return (
     <div className="max-w-4xl space-y-8">
       <div>
-        <h2 className="text-2xl font-bold text-gray-900">
-          Activity: The UI Blueprint
-        </h2>
+        <h2 className="text-2xl font-bold text-gray-900">Activity: The UI Blueprint</h2>
         <p className="text-gray-500 mt-1">
           Train your &quot;component eyes&quot; by breaking a complex UI into its building blocks.
         </p>
@@ -102,32 +100,24 @@ export function ComponentsActivity() {
       >
         <ul className="space-y-3 text-sm text-gray-600">
           <li>
-            <span className="font-medium text-gray-900">
-              Repetition signals a component.
-            </span>{" "}
-            If you see the same visual pattern more than once (cards, columns, avatars), that
-            pattern is almost certainly its own component.
+            <span className="font-medium text-gray-900">Repetition signals a component.</span> If
+            you see the same visual pattern more than once (cards, columns, avatars), that pattern
+            is almost certainly its own component.
           </li>
           <li>
-            <span className="font-medium text-gray-900">
-              Components nest inside each other.
-            </span>{" "}
-            A Column contains Cards. A Card contains Avatars and Badges. This nesting is exactly how
+            <span className="font-medium text-gray-900">Components nest inside each other.</span> A
+            Column contains Cards. A Card contains Avatars and Badges. This nesting is exactly how
             you structure your code.
           </li>
           <li>
-            <span className="font-medium text-gray-900">
-              Props are the differences.
-            </span>{" "}
-            Every Task Card has the same shape but different content. The content that changes
-            between instances becomes props.
+            <span className="font-medium text-gray-900">Props are the differences.</span> Every Task
+            Card has the same shape but different content. The content that changes between
+            instances becomes props.
           </li>
           <li>
-            <span className="font-medium text-gray-900">
-              Scope determines location.
-            </span>{" "}
-            The Navbar is used on every page, so it lives in a shared components/ folder. A card
-            specific to this board view might live co-located with the board page.
+            <span className="font-medium text-gray-900">Scope determines location.</span> The Navbar
+            is used on every page, so it lives in a shared components/ folder. A card specific to
+            this board view might live co-located with the board page.
           </li>
         </ul>
       </ExampleCard>

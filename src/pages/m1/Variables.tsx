@@ -18,9 +18,7 @@ export function Variables() {
   return (
     <div className="max-w-6xl space-y-8">
       <div>
-        <h2 className="text-2xl font-bold text-gray-900">
-          Variables & Data Types
-        </h2>
+        <h2 className="text-2xl font-bold text-gray-900">Variables & Data Types</h2>
         <p className="text-gray-500 mt-1">
           How values are stored, named, and unpacked in JavaScript.
         </p>
@@ -129,7 +127,7 @@ export function Variables() {
         description="Copy and merge objects without mutating the original. React uses this pattern heavily."
       >
         <div className="space-y-3">
-          <div className="p-3 bg-gray-50 rounded font-mono text-sm overflow-x-auto">
+          <div className="p-3 bg-gray-50 rounded font-mono text-sm overflow-x-auto overflow-x-auto">
             <p className="text-gray-500">// Current object</p>
             <p>{JSON.stringify(spreadDemo)}</p>
           </div>
@@ -159,7 +157,7 @@ export function Variables() {
         description="Copy arrays and add items without modifying the original."
       >
         <div className="space-y-3">
-          <div className="p-3 bg-gray-50 rounded font-mono text-sm">
+          <div className="p-3 bg-gray-50 rounded font-mono text-sm overflow-x-auto">
             <p className="text-gray-500">// Current array</p>
             <p>[{arraySpreadDemo.join(", ")}]</p>
           </div>
@@ -194,7 +192,7 @@ export function Variables() {
         title="Template Literals"
         description="Embed expressions inside strings using backticks."
       >
-        <div className="p-3 bg-gray-50 rounded font-mono text-sm">
+        <div className="p-3 bg-gray-50 rounded font-mono text-sm overflow-x-auto">
           <p className="text-gray-500">{"// Using backticks and ${}"}</p>
           <p>const name = "{name}";</p>
           <p className="mt-1">{`\`Hello, \${name}!\``}</p>

@@ -43,7 +43,7 @@ export function Expressions() {
               className="w-20 px-2 py-1 border border-gray-300 rounded text-sm bg-white"
             />
           </div>
-          <div className="p-3 bg-gray-50 rounded font-mono text-sm">
+          <div className="p-3 bg-gray-50 rounded font-mono text-sm overflow-x-auto">
             <p className="text-gray-500">{'// age >= 18 ? "adult" : "minor"'}</p>
             <p className="text-emerald-600">→ "{age >= 18 ? "adult" : "minor"}"</p>
           </div>
@@ -61,7 +61,7 @@ export function Expressions() {
           >
             Toggle showBadge ({showBadge ? "true" : "false"})
           </button>
-          <div className="p-3 bg-gray-50 rounded font-mono text-sm">
+          <div className="p-3 bg-gray-50 rounded font-mono text-sm overflow-x-auto">
             <p className="text-gray-500">{"// {showBadge && <Badge />}"}</p>
             <div className="mt-2">
               {showBadge && (
@@ -100,7 +100,7 @@ export function Expressions() {
               Set user to null
             </button>
           </div>
-          <div className="p-3 bg-gray-50 rounded font-mono text-sm">
+          <div className="p-3 bg-gray-50 rounded font-mono text-sm overflow-x-auto">
             <p className="text-gray-500">{"// user?.address?.street"}</p>
             <p className="text-emerald-600">→ {String(user?.address?.street ?? "undefined")}</p>
           </div>
@@ -111,7 +111,7 @@ export function Expressions() {
         title="Nullish Coalescing (??)"
         description="Provide a default only for null/undefined — not for 0 or empty string."
       >
-        <div className="p-3 bg-gray-50 rounded font-mono text-sm space-y-2">
+        <div className="p-3 bg-gray-50 rounded font-mono text-sm overflow-x-auto space-y-2">
           <p className="text-gray-500">// ?? vs ||</p>
           <p>
             {"0 ?? 10"} → <span className="text-emerald-600">0</span>{" "}
@@ -136,7 +136,7 @@ export function Expressions() {
         title="Strict Equality (===)"
         description="Always use === instead of ==. Loose equality has surprising behavior."
       >
-        <div className="p-3 bg-gray-50 rounded font-mono text-sm space-y-2">
+        <div className="p-3 bg-gray-50 rounded font-mono text-sm overflow-x-auto space-y-2">
           <p>
             {'0 == ""'} → <span className="text-amber-600">true</span>{" "}
             <span className="text-gray-400">(loose equality coerces types)</span>

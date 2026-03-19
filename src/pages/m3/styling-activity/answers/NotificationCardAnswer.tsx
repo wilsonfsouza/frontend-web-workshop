@@ -8,9 +8,7 @@ export function NotificationCardAnswer() {
       </div>
       <div className="flex-1 min-w-0">
         <div className="flex items-center justify-between gap-2">
-          <p className="text-sm font-medium text-gray-900 truncate">
-            Deployment successful
-          </p>
+          <p className="text-sm font-medium text-gray-900 truncate">Deployment successful</p>
           <span className="text-xs text-gray-400 shrink-0">2m ago</span>
         </div>
         <p className="text-sm text-gray-500 mt-0.5">

@@ -8,9 +8,7 @@ interface GetLinkClassName {
 
 const getLinkClassName = ({ isActive }: GetLinkClassName) =>
   `block px-3 py-1.5 rounded text-sm ${
-    isActive
-      ? "bg-indigo-100 text-indigo-800 font-medium"
-      : "text-gray-600 hover:bg-gray-100"
+    isActive ? "bg-indigo-100 text-indigo-800 font-medium" : "text-gray-600 hover:bg-gray-100"
   }`;
 
 interface NavLinkEntryProps {
@@ -61,11 +59,7 @@ function NavGroupEntry({ group, index, isOpen, onToggle }: NavGroupEntryProps) {
   const headingId = `nav-heading-${index}`;
 
   return (
-    <div
-      className="border-b border-gray-100 pb-2 mt-2"
-      role="group"
-      aria-labelledby={headingId}
-    >
+    <div className="border-b border-gray-100 pb-2 mt-2" role="group" aria-labelledby={headingId}>
       <button
         id={headingId}
         onClick={onToggle}
@@ -90,7 +84,11 @@ function NavGroupEntry({ group, index, isOpen, onToggle }: NavGroupEntryProps) {
             "to" in child ? (
               <NavLinkEntry key={child.to} item={child} />
             ) : (
-              <NavSubGroupEntry key={`${index}-${childIndex}`} group={child} isFirst={childIndex === 0} />
+              <NavSubGroupEntry
+                key={`${index}-${childIndex}`}
+                group={child}
+                isFirst={childIndex === 0}
+              />
             ),
           )}
         </div>

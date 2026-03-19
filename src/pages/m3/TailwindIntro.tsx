@@ -7,9 +7,7 @@ export function TailwindIntro() {
   return (
     <div className="max-w-6xl space-y-8">
       <div>
-        <h2 className="text-2xl font-bold text-gray-900">
-          Introduction to Tailwind CSS
-        </h2>
+        <h2 className="text-2xl font-bold text-gray-900">Introduction to Tailwind CSS</h2>
         <p className="text-gray-500 mt-1">
           What utility-first CSS means and how to read Tailwind classes in React code.
         </p>
@@ -302,23 +300,17 @@ export function TailwindIntro() {
             </Table.Head>
             <Table.Body>
               <Table.Row>
-                <Table.Cell className="font-medium text-gray-900">
-                  Direction
-                </Table.Cell>
+                <Table.Cell className="font-medium text-gray-900">Direction</Table.Cell>
                 <Table.Cell>One axis (row or column)</Table.Cell>
                 <Table.Cell>Two axes (rows and columns)</Table.Cell>
               </Table.Row>
               <Table.Row>
-                <Table.Cell className="font-medium text-gray-900">
-                  Sizing
-                </Table.Cell>
+                <Table.Cell className="font-medium text-gray-900">Sizing</Table.Cell>
                 <Table.Cell>Items size themselves</Table.Cell>
                 <Table.Cell>You define the grid, items fill it</Table.Cell>
               </Table.Row>
               <Table.Row>
-                <Table.Cell className="font-medium text-gray-900">
-                  Alignment
-                </Table.Cell>
+                <Table.Cell className="font-medium text-gray-900">Alignment</Table.Cell>
                 <Table.Cell>Great for centering and distributing</Table.Cell>
                 <Table.Cell>Great for precise placement</Table.Cell>
               </Table.Row>
@@ -326,9 +318,7 @@ export function TailwindIntro() {
           </Table.Root>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
             <div className="p-3 bg-indigo-50 border border-indigo-200 rounded-lg">
-              <p className="font-semibold text-indigo-800 mb-1">
-                Use Flex for:
-              </p>
+              <p className="font-semibold text-indigo-800 mb-1">Use Flex for:</p>
               <ul className="space-y-0.5 text-indigo-700">
                 <li>Navbar items in a row</li>
                 <li>Centering a single element</li>
@@ -338,9 +328,7 @@ export function TailwindIntro() {
               </ul>
             </div>
             <div className="p-3 bg-emerald-50 border border-emerald-200 rounded-lg">
-              <p className="font-semibold text-emerald-800 mb-1">
-                Use Grid for:
-              </p>
+              <p className="font-semibold text-emerald-800 mb-1">Use Grid for:</p>
               <ul className="space-y-0.5 text-emerald-700">
                 <li>Card grids (products, team members)</li>
                 <li>Dashboard layouts with panels</li>

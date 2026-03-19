@@ -18,9 +18,7 @@ export function TailwindActivity() {
   return (
     <div className="max-w-6xl space-y-8">
       <div>
-        <h2 className="text-2xl font-bold text-gray-900">
-          Activity: Style It Yourself
-        </h2>
+        <h2 className="text-2xl font-bold text-gray-900">Activity: Style It Yourself</h2>
         <p className="text-gray-500 mt-1">
           Two exercises — one guided with a partner, one solo challenge.
         </p>
@@ -66,8 +64,7 @@ export function TailwindActivity() {
               Step 1: Outer container
             </summary>
             <p className="mt-2 pl-4 text-xs">
-              flex items-start gap-3 p-4 rounded-lg border border-gray-200
-              bg-white
+              flex items-start gap-3 p-4 rounded-lg border border-gray-200 bg-white
             </p>
           </details>
           <details className="text-sm text-gray-600">
@@ -75,8 +72,7 @@ export function TailwindActivity() {
               Step 2: Icon circle
             </summary>
             <p className="mt-2 pl-4 text-xs">
-              shrink-0 w-10 h-10 rounded-full bg-emerald-100 flex items-center
-              justify-center
+              shrink-0 w-10 h-10 rounded-full bg-emerald-100 flex items-center justify-center
             </p>
           </details>
           <details className="text-sm text-gray-600">

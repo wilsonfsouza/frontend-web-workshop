@@ -48,34 +48,26 @@ export function Functions() {
             <p className="text-gray-500 mb-3">// Defining the function</p>
             <p>
               {"function greet("}
-              <span className="bg-indigo-100 text-indigo-700 px-1 rounded">
-                name
-              </span>
+              <span className="bg-indigo-100 text-indigo-700 px-1 rounded">name</span>
               {") {"}
             </p>
             <p>{"  return `Hello, ${name}!`;"}</p>
             <p>{"}"}</p>
             <p className="mt-1 text-xs">
               <span className="inline-block w-3 h-3 bg-indigo-100 rounded mr-1 align-middle" />
-              <span className="text-indigo-600">
-                parameter — the placeholder name
-              </span>
+              <span className="text-indigo-600">parameter — the placeholder name</span>
             </p>
           </div>
           <div className="p-4 bg-gray-50 rounded font-mono text-sm">
             <p className="text-gray-500 mb-3">// Calling the function</p>
             <p>
               {"greet("}
-              <span className="bg-emerald-100 text-emerald-700 px-1 rounded">
-                "Wilson"
-              </span>
+              <span className="bg-emerald-100 text-emerald-700 px-1 rounded">"Wilson"</span>
               {");"}
             </p>
             <p className="mt-1 text-xs">
               <span className="inline-block w-3 h-3 bg-emerald-100 rounded mr-1 align-middle" />
-              <span className="text-emerald-600">
-                argument — the actual value passed in
-              </span>
+              <span className="text-emerald-600">argument — the actual value passed in</span>
             </p>
           </div>
           <div className="flex items-center gap-3 text-sm text-gray-600 px-1">
@@ -93,7 +85,7 @@ export function Functions() {
         title="Arrow Functions"
         description="The most common function style in React codebases."
       >
-        <div className="p-3 bg-gray-50 rounded font-mono text-sm space-y-1">
+        <div className="p-3 bg-gray-50 rounded font-mono text-sm overflow-x-auto space-y-1">
           <p className="text-gray-500">// Full form</p>
           <p>{"const greet = (name) => { return `Hello, ${name}!`; };"}</p>
           <p className="text-gray-500 mt-2">// Short form (single expression)</p>
@@ -106,7 +98,7 @@ export function Functions() {
         title="Default Parameters"
         description="Provide fallback values when arguments are missing."
       >
-        <div className="p-3 bg-gray-50 rounded font-mono text-sm space-y-1">
+        <div className="p-3 bg-gray-50 rounded font-mono text-sm overflow-x-auto space-y-1">
           <p>{'const greet = (name = "stranger") => `Hello, ${name}!`;'}</p>
           <p className="text-emerald-600 mt-2">→ greet() = "Hello, stranger!"</p>
           <p className="text-emerald-600">→ greet("Wilson") = "Hello, Wilson!"</p>
@@ -117,7 +109,7 @@ export function Functions() {
         title="In React"
         description="Arrow functions show up as components, event handlers, and callbacks."
       >
-        <div className="p-3 bg-gray-50 rounded font-mono text-sm space-y-3">
+        <div className="p-3 bg-gray-50 rounded font-mono text-sm overflow-x-auto space-y-3">
           <div>
             <p className="text-gray-500">// Component</p>
             <p>{"const Greeting = ({ name }) => <p>Hello, {name}</p>;"}</p>
@@ -138,7 +130,7 @@ export function Functions() {
         description="Click to filter the users array for active users only."
       >
         <div className="space-y-3">
-          <div className="p-3 bg-gray-50 rounded font-mono text-sm">
+          <div className="p-3 bg-gray-50 rounded font-mono text-sm overflow-x-auto">
             <p className="text-gray-500">// Data</p>
             <p>{JSON.stringify(USERS, null, 0)}</p>
             <p className="text-gray-500 mt-2">// Code</p>
@@ -163,7 +155,7 @@ export function Functions() {
         description="Click to extract just the names from the users array."
       >
         <div className="space-y-3">
-          <div className="p-3 bg-gray-50 rounded font-mono text-sm">
+          <div className="p-3 bg-gray-50 rounded font-mono text-sm overflow-x-auto">
             <p className="text-gray-500">// Data</p>
             <p>{JSON.stringify(USERS, null, 0)}</p>
             <p className="text-gray-500 mt-2">// Code</p>
@@ -186,7 +178,7 @@ export function Functions() {
         description="Click to find the user named 'Sam'."
       >
         <div className="space-y-3">
-          <div className="p-3 bg-gray-50 rounded font-mono text-sm">
+          <div className="p-3 bg-gray-50 rounded font-mono text-sm overflow-x-auto">
             <p className="text-gray-500">// Data</p>
             <p>{JSON.stringify(USERS, null, 0)}</p>
             <p className="text-gray-500 mt-2">// Code</p>

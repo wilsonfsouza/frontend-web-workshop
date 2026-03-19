@@ -7,9 +7,7 @@ export function NextjsIntro() {
   return (
     <div className="max-w-6xl space-y-8">
       <div>
-        <h2 className="text-2xl font-bold text-gray-900">
-          Introduction to Next.js
-        </h2>
+        <h2 className="text-2xl font-bold text-gray-900">Introduction to Next.js</h2>
         <p className="text-gray-500 mt-1">
           A React framework that gives you routing, server rendering, and a production-ready setup
           out of the box.
@@ -97,27 +95,20 @@ export function NextjsIntro() {
           </CodeBlock.Root>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-gray-600">
             <div className="p-2.5 bg-gray-50 rounded">
-              <span className="font-mono font-medium text-gray-900">[slug]</span>{" "}
-              creates dynamic segments
+              <span className="font-mono font-medium text-gray-900">[slug]</span> creates dynamic
+              segments
             </div>
             <div className="p-2.5 bg-gray-50 rounded">
-              <span className="font-mono font-medium text-gray-900">
-                (group)
-              </span>{" "}
-              organizes files without affecting the URL
+              <span className="font-mono font-medium text-gray-900">(group)</span> organizes files
+              without affecting the URL
             </div>
             <div className="p-2.5 bg-gray-50 rounded">
-              <span className="font-mono font-medium text-gray-900">
-                [...slug]
-              </span>{" "}
-              catches any number of segments
+              <span className="font-mono font-medium text-gray-900">[...slug]</span> catches any
+              number of segments
             </div>
             <div className="p-2.5 bg-gray-50 rounded">
-              No{" "}
-              <span className="font-mono font-medium text-gray-900">
-                page.tsx
-              </span>{" "}
-              = no route (folder is just for organization)
+              No <span className="font-mono font-medium text-gray-900">page.tsx</span> = no route
+              (folder is just for organization)
             </div>
           </div>
         </div>
@@ -250,9 +241,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         <div className="space-y-4">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             <div>
-              <p className="text-xs font-semibold text-gray-900 mb-2">
-                Server Component (default)
-              </p>
+              <p className="text-xs font-semibold text-gray-900 mb-2">Server Component (default)</p>
               <CodeBlock.Root>
                 <CodeBlock.Frame>
                   <CodeBlock.Content>{`// No directive needed
@@ -272,9 +261,7 @@ export default async function UserList() {
               </CodeBlock.Root>
             </div>
             <div>
-              <p className="text-xs font-semibold text-gray-900 mb-2">
-                Client Component (opt in)
-              </p>
+              <p className="text-xs font-semibold text-gray-900 mb-2">Client Component (opt in)</p>
               <CodeBlock.Root>
                 <CodeBlock.Frame>
                   <CodeBlock.Content>{`"use client";
@@ -352,30 +339,24 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
       <ExampleCard title="Key Takeaways">
         <ul className="space-y-2 text-sm text-gray-600">
           <li>
-            <span className="font-medium text-gray-900">
-              Next.js is React with structure
-            </span>{" "}
-            that adds routing, server rendering, and conventions on top.
+            <span className="font-medium text-gray-900">Next.js is React with structure</span> that
+            adds routing, server rendering, and conventions on top.
           </li>
           <li>
-            <span className="font-medium text-gray-900">Files are routes.</span>{" "}
-            The app/ folder structure maps directly to URLs.
+            <span className="font-medium text-gray-900">Files are routes.</span> The app/ folder
+            structure maps directly to URLs.
           </li>
           <li>
-            <span className="font-medium text-gray-900">
-              Special filenames are conventions.
-            </span>{" "}
+            <span className="font-medium text-gray-900">Special filenames are conventions.</span>{" "}
             page.tsx, layout.tsx, and loading.tsx are the ones you&apos;ll use daily.
           </li>
           <li>
-            <span className="font-medium text-gray-900">
-              Server Components are the default.
-            </span>{" "}
+            <span className="font-medium text-gray-900">Server Components are the default.</span>{" "}
             Add &quot;use client&quot; only when you need interactivity.
           </li>
           <li>
-            <span className="font-medium text-gray-900">Start simple.</span> You
-            can build a full app with just page.tsx and layout.tsx.
+            <span className="font-medium text-gray-900">Start simple.</span> You can build a full
+            app with just page.tsx and layout.tsx.
           </li>
         </ul>
       </ExampleCard>

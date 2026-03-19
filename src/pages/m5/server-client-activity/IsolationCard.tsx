@@ -18,9 +18,7 @@ export function IsolationCard({ part, revealed, onReveal }: IsolationCardProps) 
         {revealed && (
           <span
             className={`text-[10px] font-semibold px-2 py-0.5 rounded ${
-              part.needsClient
-                ? "bg-amber-100 text-amber-800"
-                : "bg-indigo-100 text-indigo-800"
+              part.needsClient ? "bg-amber-100 text-amber-800" : "bg-indigo-100 text-indigo-800"
             }`}
           >
             {part.needsClient ? "CLIENT" : "SERVER"}

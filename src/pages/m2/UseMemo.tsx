@@ -65,9 +65,7 @@ export function UseMemo() {
   return (
     <div className="max-w-6xl space-y-8">
       <div>
-        <h2 className="text-2xl font-bold text-gray-900">
-          useMemo & useCallback
-        </h2>
+        <h2 className="text-2xl font-bold text-gray-900">useMemo & useCallback</h2>
         <p className="text-gray-500 mt-1">
           Memoize expensive computations and stabilize function references.
         </p>
@@ -106,9 +104,7 @@ export function UseMemo() {
           </div>
           <div className="grid grid-cols-2 gap-4">
             <div className="p-3 bg-red-50 rounded">
-              <p className="text-xs font-semibold text-red-700 mb-1">
-                Without useMemo
-              </p>
+              <p className="text-xs font-semibold text-red-700 mb-1">Without useMemo</p>
               <p className="text-xs text-gray-500 mb-1">Sorts on every render</p>
               <p className="text-xs font-mono text-gray-600 mb-2">
                 Sort called: <span className="font-bold">{sortWithoutMemoRenderCount}x</span>
@@ -116,9 +112,7 @@ export function UseMemo() {
               <p className="text-sm font-mono">{sortedWithoutMemo.join(", ")}</p>
             </div>
             <div className="p-3 bg-emerald-50 rounded">
-              <p className="text-xs font-semibold text-emerald-700 mb-1">
-                With useMemo
-              </p>
+              <p className="text-xs font-semibold text-emerald-700 mb-1">With useMemo</p>
               <p className="text-xs text-gray-500 mb-1">Only sorts when items change</p>
               <p className="text-xs font-mono text-gray-600 mb-2">
                 Sort called: <span className="font-bold">{sortWithMemoRenderCount}x</span>
@@ -136,9 +130,7 @@ export function UseMemo() {
         <div className="space-y-3">
           <div className="grid grid-cols-2 gap-4">
             <div className="p-3 bg-red-50 rounded">
-              <p className="text-xs font-semibold text-red-700 mb-2">
-                Without useCallback
-              </p>
+              <p className="text-xs font-semibold text-red-700 mb-2">Without useCallback</p>
               <ExpensiveListMemoized
                 items={previewItems}
                 onSelect={handleSelectWithout}
@@ -146,9 +138,7 @@ export function UseMemo() {
               />
             </div>
             <div className="p-3 bg-emerald-50 rounded">
-              <p className="text-xs font-semibold text-emerald-700 mb-2">
-                With useCallback
-              </p>
+              <p className="text-xs font-semibold text-emerald-700 mb-2">With useCallback</p>
               <ExpensiveListMemoized
                 items={previewItems}
                 onSelect={handleSelectWith}

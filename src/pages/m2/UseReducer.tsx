@@ -81,12 +81,8 @@ export function UseReducer() {
               </div>
 
               <div>
-                <h4 className="font-semibold text-gray-900">
-                  {steps[state.step].title}
-                </h4>
-                <p className="text-sm text-gray-600 mt-1">
-                  {steps[state.step].content}
-                </p>
+                <h4 className="font-semibold text-gray-900">{steps[state.step].title}</h4>
+                <p className="text-sm text-gray-600 mt-1">{steps[state.step].content}</p>
               </div>
 
               <div className="flex gap-2">
@@ -123,7 +119,7 @@ export function UseReducer() {
             </div>
           )}
 
-          <div className="p-3 bg-gray-50 rounded font-mono text-sm">
+          <div className="p-3 bg-gray-50 rounded font-mono text-sm overflow-x-auto">
             <p className="text-gray-500">// Current state</p>
             <p>{JSON.stringify(state)}</p>
           </div>

@@ -18,9 +18,7 @@ export function StateActivity() {
   return (
     <div className="max-w-6xl space-y-8">
       <div>
-        <h2 className="text-2xl font-bold text-gray-900">
-          Activity: State Management Decisions
-        </h2>
+        <h2 className="text-2xl font-bold text-gray-900">Activity: State Management Decisions</h2>
         <p className="text-gray-500 mt-1">
           7 scenarios. For each one, pick the state approach that fits best.
         </p>
@@ -122,32 +120,24 @@ export function StateActivity() {
       <ExampleCard title="Key Takeaways">
         <ul className="space-y-2 text-sm text-gray-600">
           <li>
-            <span className="font-medium text-gray-900">Start simple.</span>{" "}
-            Don&apos;t reach for global state or libraries until you feel the pain.
+            <span className="font-medium text-gray-900">Start simple.</span> Don&apos;t reach for
+            global state or libraries until you feel the pain.
           </li>
           <li>
-            <span className="font-medium text-gray-900">
-              URL state is underused.
-            </span>{" "}
-            If it should be shareable, put it in the URL.
+            <span className="font-medium text-gray-900">URL state is underused.</span> If it should
+            be shareable, put it in the URL.
           </li>
           <li>
-            <span className="font-medium text-gray-900">
-              Context for scoped sharing.
-            </span>{" "}
-            Perfect for component libraries and feature-scoped state.
+            <span className="font-medium text-gray-900">Context for scoped sharing.</span> Perfect
+            for component libraries and feature-scoped state.
           </li>
           <li>
-            <span className="font-medium text-gray-900">
-              Update frequency matters.
-            </span>{" "}
-            Frequent updates → Zustand. Rare updates → Context.
+            <span className="font-medium text-gray-900">Update frequency matters.</span> Frequent
+            updates → Zustand. Rare updates → Context.
           </li>
           <li>
-            <span className="font-medium text-gray-900">
-              Combine approaches.
-            </span>{" "}
-            Apps use multiple strategies working together.
+            <span className="font-medium text-gray-900">Combine approaches.</span> Apps use multiple
+            strategies working together.
           </li>
         </ul>
       </ExampleCard>

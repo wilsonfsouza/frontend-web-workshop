@@ -108,7 +108,7 @@ export function CustomHooks() {
             placeholder="Type quickly, watch the debounced value lag behind..."
             className="w-full px-3 py-2 border border-gray-300 rounded bg-white text-sm"
           />
-          <div className="p-3 bg-gray-50 rounded font-mono text-sm space-y-1">
+          <div className="p-3 bg-gray-50 rounded font-mono text-sm overflow-x-auto space-y-1">
             <p>
               Raw value: "<span className="text-amber-600">{search}</span>"
             </p>

@@ -128,8 +128,7 @@ export const steps: Step[] = [
     location: "text-sm text-gray-400",
     bio: "text-gray-700 leading-relaxed",
     skillContainer: "flex flex-wrap gap-2",
-    skill:
-      "px-3 py-1 rounded-full text-xs font-medium bg-indigo-100 text-indigo-800",
+    skill: "px-3 py-1 rounded-full text-xs font-medium bg-indigo-100 text-indigo-800",
     buttonRow: "",
     primaryBtn: "",
     secondaryBtn: "",
@@ -147,8 +146,7 @@ export const steps: Step[] = [
     location: "text-sm text-gray-400",
     bio: "text-gray-700 leading-relaxed",
     skillContainer: "flex flex-wrap gap-2",
-    skill:
-      "px-3 py-1 rounded-full text-xs font-medium bg-indigo-100 text-indigo-800",
+    skill: "px-3 py-1 rounded-full text-xs font-medium bg-indigo-100 text-indigo-800",
     buttonRow: "flex gap-3 pt-2",
     primaryBtn:
       "px-4 py-2 rounded-lg bg-indigo-600 text-white text-sm font-medium hover:bg-indigo-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-2 transition-colors",
@@ -168,8 +166,7 @@ export const steps: Step[] = [
     location: "text-sm text-gray-400",
     bio: "text-gray-700 leading-relaxed",
     skillContainer: "flex flex-wrap gap-2",
-    skill:
-      "px-3 py-1 rounded-full text-xs font-medium bg-indigo-100 text-indigo-800",
+    skill: "px-3 py-1 rounded-full text-xs font-medium bg-indigo-100 text-indigo-800",
     buttonRow: "flex gap-3 pt-2",
     primaryBtn:
       "px-4 py-2 rounded-lg bg-indigo-600 text-white text-sm font-medium hover:bg-indigo-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-2 transition-colors",

@@ -5,9 +5,7 @@ export function ClientVsServer() {
   return (
     <div className="max-w-6xl space-y-8">
       <div>
-        <h2 className="text-2xl font-bold text-gray-900">
-          The Evolution of the Web
-        </h2>
+        <h2 className="text-2xl font-bold text-gray-900">The Evolution of the Web</h2>
         <p className="text-gray-500 mt-1">
           How we went from full-page reloads to single-page apps to server-rendered React.
         </p>
@@ -92,34 +90,29 @@ export function ClientVsServer() {
             </p>
           </div>
           <div>
-            <p className="text-xs font-semibold text-gray-900 mb-1">
-              The Next.js way (hydration)
-            </p>
+            <p className="text-xs font-semibold text-gray-900 mb-1">The Next.js way (hydration)</p>
             <ul className="space-y-2 list-none">
               <li className="flex gap-2">
                 <span className="shrink-0 text-indigo-500 font-bold">1.</span>
                 <span>
-                  <span className="font-medium text-gray-900">First load:</span>{" "}
-                  The server sends a fully built HTML page so the user sees content immediately
-                  (great for SEO).
+                  <span className="font-medium text-gray-900">First load:</span> The server sends a
+                  fully built HTML page so the user sees content immediately (great for SEO).
                 </span>
               </li>
               <li className="flex gap-2">
                 <span className="shrink-0 text-indigo-500 font-bold">2.</span>
                 <span>
-                  <span className="font-medium text-gray-900">Hydration:</span>{" "}
-                  Once that HTML hits the browser, React &quot;wakes up&quot; and takes over the
-                  page, turning it into a SPA.
+                  <span className="font-medium text-gray-900">Hydration:</span> Once that HTML hits
+                  the browser, React &quot;wakes up&quot; and takes over the page, turning it into a
+                  SPA.
                 </span>
               </li>
               <li className="flex gap-2">
                 <span className="shrink-0 text-indigo-500 font-bold">3.</span>
                 <span>
-                  <span className="font-medium text-gray-900">
-                    Subsequent clicks:
-                  </span>{" "}
-                  No full reload. React fetches the new data and updates only the piece of the
-                  screen that changed.
+                  <span className="font-medium text-gray-900">Subsequent clicks:</span> No full
+                  reload. React fetches the new data and updates only the piece of the screen that
+                  changed.
                 </span>
               </li>
             </ul>
@@ -139,17 +132,13 @@ export function ClientVsServer() {
           </Table.Head>
           <Table.Body>
             <Table.Row>
-              <Table.Cell className="font-medium text-gray-900">
-                First load
-              </Table.Cell>
+              <Table.Cell className="font-medium text-gray-900">First load</Table.Cell>
               <Table.Cell>Server builds HTML</Table.Cell>
               <Table.Cell>Blank page until JS loads</Table.Cell>
               <Table.Cell>Server builds HTML (fast)</Table.Cell>
             </Table.Row>
             <Table.Row>
-              <Table.Cell className="font-medium text-gray-900">
-                Navigation
-              </Table.Cell>
+              <Table.Cell className="font-medium text-gray-900">Navigation</Table.Cell>
               <Table.Cell>Full page reload</Table.Cell>
               <Table.Cell>Instant (JS swaps content)</Table.Cell>
               <Table.Cell>Instant after hydration</Table.Cell>
@@ -161,9 +150,7 @@ export function ClientVsServer() {
               <Table.Cell>Good</Table.Cell>
             </Table.Row>
             <Table.Row>
-              <Table.Cell className="font-medium text-gray-900">
-                Hosting
-              </Table.Cell>
+              <Table.Cell className="font-medium text-gray-900">Hosting</Table.Cell>
               <Table.Cell>Server required</Table.Cell>
               <Table.Cell>Static files (S3, CDN)</Table.Cell>
               <Table.Cell>Node.js server required</Table.Cell>

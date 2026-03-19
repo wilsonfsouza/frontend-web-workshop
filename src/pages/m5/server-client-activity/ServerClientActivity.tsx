@@ -27,9 +27,7 @@ export function ServerClientActivity() {
   return (
     <div className="max-w-6xl space-y-8">
       <div>
-        <h2 className="text-2xl font-bold text-gray-900">
-          Activity: Server or Client?
-        </h2>
+        <h2 className="text-2xl font-bold text-gray-900">Activity: Server or Client?</h2>
         <p className="text-gray-500 mt-1">
           Two exercises to sharpen your instinct for the server/client boundary.
         </p>

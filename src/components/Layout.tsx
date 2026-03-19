@@ -15,7 +15,10 @@ export function Layout() {
       {/* Mobile nav */}
       <div className="md:hidden bg-white">
         <div className="px-4 py-3 text-center">
-          <NavLink to="/" className="text-lg font-semibold text-gray-900 hover:text-indigo-700 transition-colors">
+          <NavLink
+            to="/"
+            className="text-lg font-semibold text-gray-900 hover:text-indigo-700 transition-colors"
+          >
             Web Dev Workshop
           </NavLink>
         </div>
@@ -50,7 +53,10 @@ export function Layout() {
       {/* Desktop sidebar */}
       <aside className="hidden md:flex md:flex-col w-64 shrink-0 border-r border-gray-200">
         <div className="flex-1 overflow-y-auto p-4">
-          <NavLink to="/" className="block text-lg font-semibold text-gray-900 mb-4 hover:text-indigo-700 transition-colors">
+          <NavLink
+            to="/"
+            className="block text-lg font-semibold text-gray-900 mb-4 hover:text-indigo-700 transition-colors"
+          >
             Web Dev Workshop
           </NavLink>
           <nav aria-label="Workshop navigation">

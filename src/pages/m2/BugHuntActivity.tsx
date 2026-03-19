@@ -78,9 +78,7 @@ export function BugHuntActivity() {
                 </div>
                 <span
                   className={`text-xs px-2 py-0.5 rounded ${
-                    user.active
-                      ? "bg-emerald-100 text-emerald-800"
-                      : "bg-gray-200 text-gray-600"
+                    user.active ? "bg-emerald-100 text-emerald-800" : "bg-gray-200 text-gray-600"
                   }`}
                 >
                   {user.active ? "Active" : "Inactive"}

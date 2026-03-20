@@ -59,31 +59,6 @@ console.log(subtotal); // ❌ Error: subtotal only exists inside calculateTotal`
       </ExampleCard>
 
       <ExampleCard
-        title="Closures"
-        description="Functions that remember their environment — even after the outer function has finished."
-      >
-        <CodeBlock.Root>
-          <CodeBlock.Content variant="light">{`function createCounter() {
-  let count = 0; // this variable is "closed over"
-
-  return {
-    increment: () => { count += 1; },
-    getCount: () => count,
-  };
-}
-
-const counter = createCounter();
-counter.increment();
-counter.increment();
-counter.getCount(); // 2`}</CodeBlock.Content>
-        </CodeBlock.Root>
-        <div className="mt-3 p-3 bg-amber-50 rounded text-sm text-amber-700">
-          In React, closures are why event handlers can access state variables — the handler
-          function &quot;closes over&quot; the state from the render where it was created.
-        </div>
-      </ExampleCard>
-
-      <ExampleCard
         title="Module Scope"
         description="Each file is its own scope. Use export/import to share between files."
       >
@@ -133,11 +108,6 @@ console.log(API_URL);  // ❌ API_URL was not exported`}</CodeBlock.Content>
               <Table.Cell>Function</Table.Cell>
               <Table.Cell className="font-mono">function() {"{}"}</Table.Cell>
               <Table.Cell>Code inside the function only</Table.Cell>
-            </Table.Row>
-            <Table.Row>
-              <Table.Cell>Closure</Table.Cell>
-              <Table.Cell>Inner function</Table.Cell>
-              <Table.Cell>Inner function remembers outer variables</Table.Cell>
             </Table.Row>
             <Table.Row>
               <Table.Cell>Module</Table.Cell>
